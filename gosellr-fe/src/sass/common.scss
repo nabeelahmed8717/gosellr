@@ -375,6 +375,13 @@
   text-transform: uppercase;
 }
 
+.d-btn{
+  border: none;
+  outline: none;
+  &:focus{
+    color: #515151;
+  }
+}
 
 
 // ####### Common Border Class #######
