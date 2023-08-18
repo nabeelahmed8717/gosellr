@@ -1,0 +1,438 @@
+@import "./variables.scss";
+
+.btn-primary,
+.btn-cancel,
+.btn-secondary {
+  border: none;
+  color: $white-color;
+  padding: 12px 35px;
+  line-height: $line-height-20;
+  font-size: $fs-16;
+  font-weight: $fw-600;
+  // border-radius: $border-radius-2;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  cursor: pointer;
+}
+
+.ant-btn {
+  font-weight: 500 !important;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
+.audit-button {
+  background-color: $audit-button;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.error-color {
+  color: $error-color;
+}
+
+.bg-error-color {
+  background-color: $error-color;
+}
+
+.approved-color {
+  color: $approved-color;
+}
+
+.btn-cancel {
+  background-color: $cancle-button-background;
+}
+
+.dark-brown-color {
+  color: $cancle-button-background;
+}
+
+.title-color {
+  color: $title-color;
+}
+
+.blue-color {
+  color: $blue-color;
+}
+
+.label-color {
+  color: $label-color;
+}
+
+.light-grey{
+  color: $light-grey;
+}
+.snow-white-color {
+  color: $snow-white-color;
+}
+
+.form-heading-color {
+  color: $form-heading-color;
+}
+
+.bg-orange-color {
+  background-color: $orange-color;
+}
+
+.orange-color {
+  color: $orange-color;
+}
+
+.card-heading {
+  color: $card-heading;
+}
+
+.card-heading {
+  color: $card-heading;
+}
+
+.pink-color {
+  color: $pink-color;
+}
+
+.card-text {
+  color: $card-text-color;
+}
+
+.light-black-color {
+  color: $light-black-color;
+}
+
+.black-color {
+  color: $black-color;
+}
+
+.bg-inner-shadow {
+  background-color: $tabs-inner-shadow;
+}
+
+.orange-color {
+  color: $orange-color;
+}
+
+// border radius classes
+.border-radius-2 {
+  border-radius: $border-radius-2;
+}
+
+.border-radius-4 {
+  border-radius: $border-radius-4;
+}
+
+.border-radius-6 {
+  border-radius: $border-radius-6;
+}
+
+.border-radius-8 {
+  border-radius: $border-radius-8;
+}
+
+.border-radius-10 {
+  border-radius: $border-radius-10;
+}
+
+.border-radius-12 {
+  border-radius: $border-radius-12;
+}
+
+.border-radius-14 {
+  border-radius: $border-radius-14;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none !important;
+}
+
+//color
+.bg-white {
+  background-color: $white-color;
+}
+
+.white-color {
+  color: $white-color;
+}
+
+.light-grey-color {
+  color: $gray-placeholder;
+}
+
+// font classes start here
+.fs-10 {
+  font-size: $fs-10;
+}
+
+.fs-12 {
+  font-size: $fs-12;
+}
+
+.fs-14 {
+  font-size: $fs-14;
+}
+
+.fs-15{
+  font-size: $fs-15;
+}
+
+.fs-16 {
+  font-size: $fs-16;
+}
+
+.fs-18 {
+  font-size: $fs-18;
+}
+
+.fs-20 {
+  font-size: $fs-20;
+}
+
+.fs-22 {
+  font-size: $fs-22;
+}
+
+.fs-24 {
+  font-size: $fs-24;
+}
+
+.fs-26 {
+  font-size: $fs-26;
+}
+
+.fs-28 {
+  font-size: $fs-28;
+}
+
+.fs-30 {
+  font-size: $fs-30;
+}
+
+.fs-32 {
+  font-size: $fs-32;
+}
+
+.fs-40 {
+  font-size: $fs-40;
+}
+
+// font weight classes
+.fw-300 {
+  font-weight: $fw-300;
+}
+
+.fw-400 {
+  font-weight: $fw-400;
+}
+
+.fw-500 {
+  font-weight: $fw-500;
+}
+
+.fw-600 {
+  font-weight: $fw-600;
+}
+
+.fw-700 {
+  font-weight: $fw-700;
+}
+
+// line height end here
+.line-height-16 {
+  line-height: $line-height-16;
+}
+
+.line-height-17 {
+  line-height: $line-height-17;
+}
+
+.line-height-18 {
+  line-height: $line-height-18;
+}
+
+.line-height-20 {
+  line-height: $line-height-20;
+}
+
+.line-height-22 {
+  line-height: $line-height-22;
+}
+
+.line-height-24 {
+  line-height: $line-height-24;
+}
+
+.line-height-30 {
+  line-height: $line-height-30;
+}
+
+.line-height-32 {
+  line-height: $line-height-32;
+}
+
+.line-height-40 {
+  line-height: $line-height-40;
+}
+
+// width and margin
+.m-0 {
+  margin: 0px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.d-block {
+  display: block;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.border-radius-50 {
+  border-radius: 50%;
+}
+
+.card-box-shadow {
+  box-shadow: $card-box-shadow;
+}
+
+.text-upercase {
+  text-transform: uppercase;
+}
+
+
+
+// ####### Common Border Class #######
+.common-border {
+  border: 1px solid #d9dbe9;
+}
+
+.common-border-bottom {
+  border-bottom: 1px solid #d9dbe9;
+}
+
+.input-search-wrapper {
+  .ant-input::placeholder {
+    color: $label-color;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .ant-input-affix-wrapper {
+    border: 1px solid #d9dbe9;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    height: 40px;
+    border-radius: 2px;
+  }
+
+  .icon {
+    margin-left: 10px;
+    margin-right: 6px;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+
+.ant-table-wrapper {
+  clear: both;
+  max-width: 100%;
+  border: 1px solid #e7e7e9;
+  border-radius: 10px;
+}
+
+:where(.css-dev-only-do-not-override-1aocciv).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-1aocciv).ant-table-wrapper .ant-table-thead >tr>td {
+  position: relative;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  text-align: start;
+  background: #F9FBFC;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+:where(.css-dev-only-do-not-override-1aocciv).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-1aocciv).ant-table-wrapper .ant-table-tbody>tr>td{
+  padding: 12px 16px;
+}
+
+.ant-table-cell{
+  &::before{
+    background-color: rgb(114, 114, 114) !important;
+  }
+}

@@ -1,0 +1,34 @@
+.wrapper-profile-tab{
+    .bx-low-bx-cont{
+        background-color: #F7F7F7;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        padding: 15px;
+        .view-in-maps-btn{
+            background-color: #27ae6021;
+            border: none;
+            padding: 2px 9px;
+            height: fit-content;
+            font-size: 11px;
+            color: #209b54;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+    }
+    .low-bx-cont-mb{
+        margin-bottom: 20px;
+    }
+    .service-label {
+        p {
+          font-size: 11px;
+          background-color: antiquewhite;
+          width: -moz-fit-content;
+          width: fit-content;
+          padding: 4px 12px;
+          border-radius: 25px;
+          margin-top: 3px;
+        }
+        margin-bottom: 10px;
+      }
+}

@@ -1,0 +1,58 @@
+.book-now-from{
+    margin-top: 30px;
+    .ant-form-item
+    .ant-form-item-label
+    > label.ant-form-item-required:not(
+      .ant-form-item-required-mark-optional
+    )::before {
+    display: none;
+  }
+  .ant-form-item .ant-form-item-label {
+    padding-bottom: 2px !important;
+    font-weight: 600;
+  }
+  .end-navigator {
+    color: #727272;
+    width: auto;
+
+    span {
+      color: #000;
+      font-weight: 600;
+      &:hover {
+        color: #2a56b8;
+      }
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 10px !important;
+  }
+
+  .group-address{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    button{
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  .ant-picker-range{
+    height: 45px;
+    width: 100%;
+  }
+  .book-now-btn{
+    background-color: #000;
+    color: #fff !important;
+    transition: 0.3s;
+    height: 45px;
+    &:hover{
+        border-radius: 30px;
+    }
+  }
+}

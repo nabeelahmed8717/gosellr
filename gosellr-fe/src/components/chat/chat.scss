@@ -1,0 +1,20 @@
+.main-chat-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 42px;
+    @media (max-width: 900px){
+        width: 95%;
+    }
+    @media (max-width: 768px){
+        margin-top: 5px;
+    }
+    .chat-header{
+        
+    }
+    .chat-inner-wrapper{
+        margin-top: 30px;
+        @media (max-width: 768px){
+            margin-top: 0px;
+        }
+    }
+}

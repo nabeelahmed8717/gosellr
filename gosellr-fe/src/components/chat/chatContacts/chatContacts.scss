@@ -1,0 +1,99 @@
+.main-chat-contents-wrapper {
+  .search-contacts {
+    background-color: white;
+    border: 1px solid #e7e7e9;
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 25px;
+    height: 45px;
+  }
+  .contacts-wrapper {
+    border: 1px solid #e7e7e9;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    .chat-contact-bx-sng {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 0px;
+      border-bottom: 1px solid #e7e7e9;
+      &:last-child{
+        border-bottom: none;
+        padding-bottom: 0px;
+      }
+      &:first-child{
+        padding-top: 0px;
+      }
+      .wrap-icon-and-message {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 74%;
+        .user-icon--details {
+          background-color: #e7e7e9;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          position: relative;
+          img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+          }
+          .is-active-sc {
+            position: absolute;
+            background-color: #27ae60;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            right: -4px;
+            top: 30px;
+            border: 2px solid #fff;
+          }
+        }
+        .head--last-read {
+          h2 {
+            font-size: 16px;
+            color: #333436;
+            font-weight: 600;
+          }
+          p {
+            font-size: 13px;
+            color: #838383;
+            font-weight: 400;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;           
+        
+            &::after {
+              content: "...";
+            }
+          }
+        }
+      }
+
+      .time--unread {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 100%;
+        gap: 5px;
+        p {
+          font-size: 12px;
+          font-weight: 600;
+          color: #9b9b9b;
+        }
+        .unread {
+          font-size: 12px;
+          font-weight: 500;
+          background-color: #e67e22;
+          color: #fff;
+          width: fit-content;
+          padding: 2px 10px;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}

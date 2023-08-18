@@ -1,0 +1,205 @@
+.user-profile-main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  @media (max-width: 525px) {
+    width: 95%;
+    margin-top: 78px;
+  }
+
+  // ~
+  // .book-now-res-bbx{
+  //   background-color: #4087ed;
+  //   height: 64px;
+  //   width: 100%;
+  //   position: fixed;
+  //   top: 65px;
+  //   left: 0;
+  //   z-index: 1;
+  // }
+  // ~
+
+  .section-user-info {
+    .wrapper-profile-banner {
+      background-color: rgb(230, 230, 230);
+      width: 100%;
+      max-height: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid #e7e7e9;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .user-profile-wrapper {
+      display: flex;
+      align-items: end;
+      gap: 15px;
+      width: 95%;
+      margin: 0 auto;
+      margin-top: -20px;
+      position: relative;
+
+      @media (max-width: 525px) {
+        margin-top: 8px;
+      }
+      .user-image {
+        position: relative;
+        background-color: #e7e7e9;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        @media (max-width: 525px) {
+          width: 40px;
+          height: 40px;
+        }
+
+        //   overflow: hidden;
+        img {
+          border: 3px solid #fff;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          overflow: hidden;
+          @media (max-width: 525px) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .badge-is-online {
+          position: absolute;
+          background-color: #27ae60;
+          width: 12px;
+          height: 12px;
+          border-radius: 5px;
+          right: 0;
+          top: 40px;
+          border: 2px solid #fff;
+          @media (max-width: 525px) {
+            top: 20px;
+            right: -4px;
+          }
+        }
+      }
+      .user-details {
+        display: flex;
+        gap: 10px;
+        .main-details {
+          display: flex;
+          flex-direction: column;
+          gap: 3;
+          width: fit-content;
+          h2 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 14px;
+            color: #a4a4a4;
+          }
+        }
+
+        .profile-ratings {
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          background-color: #f39c121c;
+          padding: 3px 8px;
+          border-radius: 10px;
+          position: absolute;
+          right: 0;
+          top: 32px;
+          @media (max-width: 525px) {
+            top: 6px;
+          }
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .section-detailed-tab {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .bg-side-info-wrap {
+    background-color: #f7f7f7;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .book-sec {
+    background-color: #f7f7f7c2;
+    border-radius: 15px;
+    border: 1.5px solid #aeaeae;
+    border-style: dashed;
+    overflow: hidden;
+    position: sticky;
+    top: 80px;
+    transition: 0.3s;
+    @media (max-width: 525px) {
+      background-color: #ffffff6e;
+      height: 64px;
+      width: 100%;
+      position: fixed;
+      // top: 65px;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 18px;
+      border-radius: 0px;
+      border: none;
+      border-bottom: 1px solid #e7e7e9;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+      h4 {
+        font-size: 14px !important;
+        color: #000 !important;
+      }
+    }
+
+    .h-rate {
+      font-size: 19px;
+      color: #4087ed;
+      margin-top: 4px;
+      margin-bottom: 30px;
+      @media (max-width: 525px) {
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+      span {
+        font-size: 13px;
+        color: #a7a7a7;
+      }
+    }
+    button {
+      background-color: transparent;
+      width: 100%;
+      height: 49px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #27ae60;
+      border: none;
+      border-top: 1px solid #e7e7e9;
+      transition: 0.3s;
+      &:hover {
+        background-color: #27ae60;
+        color: #fff;
+      }
+      @media (max-width: 525px) {
+        background-color: #27ae601c;
+        color: #27ae60;
+        width: fit-content;
+        height: fit-content;
+        padding: 6px 18px;
+        border: none;
+        border-radius: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.create-modal-main-wrapper {
+  .ant-modal {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 24px;
+    position: absolute;
+    bottom: 77px;
+    right: 20px;
+    top: auto !important;
+    @media (max-width: 525px) {
+      bottom: 12px;
+      padding-bottom: 0;
+    }
+  }
+  .ant-modal-content {
+    left: 5px !important;
+    padding: 14px;
+    position: relative;
+    @media (max-width: 525px) {
+      &::before{
+        content: "";
+      width: 60px;
+      height: 5px;
+      background-color: #b1b1b1;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 10px;
+      }
+    }
+    
+  }
+  .boxes-create-main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    .boxes-create-main-bx{
+      background-color: #f3f3f3;
+      padding: 10px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .icon{
+        width: 35px;
+        height: 35px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p{
+        font-size: 15px;
+        font-weight: 500;
+      }
+      span{}
+    }
+  }
+ 
+}

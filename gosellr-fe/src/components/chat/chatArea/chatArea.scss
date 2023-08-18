@@ -1,0 +1,192 @@
+.main-chat-area-wrapper {
+  width: 100%;
+  border: 1px solid #e7e7e9;
+  border-radius: 15px;
+  padding: 15px;
+  @media (max-width: 768px){
+    padding: 15px 0px;
+    border: none;
+  }
+  .chat-head {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e9;
+    padding-bottom: 5px;
+    .wrp-one-set {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .user-icon--details {
+        background-color: #e7e7e9;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+      }
+      .user-chat-details {
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .chat-area {
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 0;
+      @media (max-width: 768px){
+        width: 3px;
+      }
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(169, 169, 169);
+      border-radius: 20px;
+    }
+    .chat-wrap {
+      padding: 15px;
+      @media (max-width: 768px){
+        padding: 15px 6px;
+      }
+      .chat-holder {
+        margin-top: 15px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: #404eed;
+          width: 20px;
+          height: 20px;
+          right: -3px;
+          top: -0.9px;
+          border-radius: 13px 4px 4px 4px;
+          transform: rotate(45deg);
+          z-index: -1;
+        }
+        .chat-bx {
+          max-width: 80%;
+          height: fit-content;
+          border-radius: 10px;
+          padding: 10px;
+          .chat-content {
+            font-size: 15px;
+          }
+          .chat-time {
+            min-width: 100px;
+            text-align: end;
+            p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .sx-outGoining {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        &::before {
+          background-color: #404eed;
+          right: -3px;
+          top: -0.9px;
+        }
+        .chat-bx {
+          background-color: #404eed;
+          .chat-content {
+            color: #fff;
+          }
+          .chat-time p {
+            font-size: 11px;
+            color: #ffffffb5;
+          }
+        }
+      }
+      .sx-inComing {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        &::before {
+          background-color: #F6F6F6;
+          left: -3px;
+          top: -0.9px;
+        }
+        .chat-bx {
+          background-color: #F6F6F6;
+          .chat-content {
+            color: #323232;
+          }
+          .chat-time p {
+            font-size: 11px;
+            color: #737373b5;
+          }
+        }
+      }
+    }
+  }
+  .chat-width-controller {
+    height: 50vh;
+    @media (max-width: 768px){
+      height: 80vh;
+    }
+  }
+  .chat-sender-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 768px){
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-color: white;
+      width: 100%;
+      padding: 10px 12px 14px 12px;
+      border-top: 1px solid #e7e7e9;
+      gap: 10px;
+    }
+    .textarea-autosize {
+      max-height: 100px;
+      border-radius: 60px;
+      resize: none;
+      overflow: hidden;
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 0;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(169, 169, 169);
+        border-radius: 20px;
+      }
+    }
+  }
+  .else-chat-wrapper{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 51vh;
+    justify-content: center;
+    gap: 20px;
+    h2{
+      font-size: 20px;
+    font-family: 'circular';
+    font-weight: 600;
+    color: #989898;
+    }
+  }
+}
