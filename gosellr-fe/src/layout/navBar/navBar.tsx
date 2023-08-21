@@ -182,7 +182,7 @@ const NavBar = () => {
                             <Button className="rounded-buttons-nav" onClick={() => navigate('./home')}><img src={homeIcon} width={20} height={20} alt="" /></Button>
                             {/* <Button className="rounded-buttons-nav" onClick={() => navigate('./services')}><img src={services} width={20} height={20} alt="" /></Button> */}
                             <Button className="rounded-buttons-nav" onClick={() => navigate('./chat')}><img src={chat} width={20} height={20} alt="" /><div className='sp-only-chat'>5</div></Button>
-                            <Button className="rounded-buttons-nav" onClick={() => navigate('./bookings')}><img src={cart} width={20} height={20} alt="" /><div className='sp-only-chat'>2</div></Button>
+                            <Button className="rounded-buttons-nav" onClick={() => navigate('./cart')}><img src={cart} width={20} height={20} alt="" /><div className='sp-only-chat'>2</div></Button>
                             <div className="user-profile-wrapper">
                                 <Dropdown menu={{ items }} placement="bottomRight" arrow overlayClassName='pro-drp'>
                                     <div className="user-profile">

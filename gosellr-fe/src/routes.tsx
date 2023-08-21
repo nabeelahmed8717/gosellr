@@ -24,7 +24,7 @@ const LandingPage = Loadable(lazy(() => import("./pages/landingPage")));
 const SignIn = Loadable(lazy(() => import("./pages/signIn")));
 const SignUp = Loadable(lazy(() => import("./pages/signUp")));
 const Chat = Loadable(lazy(() => import("./pages/chat")));
-const Bookings = Loadable(lazy(() => import("./pages/bookings")));
+const MyCart = Loadable(lazy(() => import("./pages/myCart")));
 const UserProfile = Loadable(lazy(() => import("./pages/userProfile")));
 
 
@@ -51,8 +51,8 @@ export const routes: any = [
         element: <Chat />,
       },
       {
-        path: "bookings",
-        element: <Bookings />,
+        path: "cart",
+        element: <MyCart />,
       },
       {
         path: "user-profile",
