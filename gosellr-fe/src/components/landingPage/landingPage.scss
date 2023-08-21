@@ -10,7 +10,7 @@
     padding: 0px 37px;
     @media (max-width: 768px) {
       padding: 10px 20px 0px 20px;
-    height: auto;
+      height: auto;
     }
     .section-one {
       display: flex;
@@ -18,11 +18,11 @@
       gap: 20px;
       @media (max-width: 768px) {
         gap: 8px;
-    align-items: flex-start;
-    overflow: scroll;
-    display: flex;
-    white-space: nowrap;
-    padding: 0px 0px 9px 0px;
+        align-items: flex-start;
+        overflow: scroll;
+        display: flex;
+        white-space: nowrap;
+        padding: 0px 0px 9px 0px;
       }
       .hamburger-btn {
         background-color: #fab529;
@@ -106,7 +106,7 @@
     .header-category {
       margin-top: 40px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       gap: 20px;
       @media (max-width: 768px) {
         flex-direction: column;
@@ -215,7 +215,7 @@
             justify-content: center;
             gap: 13px;
             transition: 0.3s;
-            &:first-child{
+            &:first-child {
               margin: 0 5px 0 0 !important;
             }
             @media (max-width: 768px) {
@@ -249,5 +249,39 @@
   .set-width-85 {
     width: 85%;
     margin: 0 auto;
+  }
+
+  .main-products-container {
+    .head-products {
+      h3 {
+        font-size: 20px;
+        color: #5c5c5c;
+        display: flex;
+        flex-direction: column;
+        span {
+          color: #b9b9b9;
+          font-size: 11px;
+        }
+      }
+    }
+    .wrapper-product-display{
+      margin-top: 20px;
+      
+    }
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .set-width-85{
+    width: 95% !important;
+  }
+  .wrapper-main-landing-page .wrapper-adds-bar .inner-wrapper-ads{
+    width: 95% !important;
   }
 }

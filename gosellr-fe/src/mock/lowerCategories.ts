@@ -22,7 +22,7 @@ export const lowerCategories = [
     },
     {
         label:"Medicine",
-        icon: food
+        icon: medicine
     },
     {
         label:"Mobile Phones",

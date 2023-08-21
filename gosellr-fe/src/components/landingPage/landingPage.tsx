@@ -13,6 +13,7 @@ import adverRight from "../../assets/raw/adverRight.png"
 import arrowDown from "../../assets/icons/arrow-down-small.svg"
 import { useNavigate } from 'react-router-dom'
 import { lowerCategories } from '../../mock/lowerCategories'
+import ProductCard from '../../shared/productCard/productCard'
 
 
 
@@ -25,18 +26,18 @@ const LandingPage = () => {
 
   const [isMobile, setIsMobile] = useState(false);
 
-  const handleScroll = (scrollOffset:any) => {
+  const handleScroll = (scrollOffset: any) => {
     if (cardContainerRef.current) {
       const targetScrollLeft = cardContainerRef.current.scrollLeft + scrollOffset;
       smoothScrollTo(targetScrollLeft, 300); // Smoothly scroll to the target position
     }
   };
 
-  const smoothScrollTo = (target:any, duration:any) => {
+  const smoothScrollTo = (target: any, duration: any) => {
     const start = cardContainerRef.current.scrollLeft;
     const startTime = performance.now();
-    
-    const animateScroll = (timestamp:any) => {
+
+    const animateScroll = (timestamp: any) => {
       const currentTime = timestamp - startTime;
       const scrollProgress = Math.min(currentTime / duration, 1);
       const scrollPosition = start + (target - start) * scrollProgress;
@@ -54,14 +55,14 @@ const LandingPage = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 768px)');
     function handleViewportChange(event: any) {
-        setIsMobile(event.matches);
+      setIsMobile(event.matches);
     }
     handleViewportChange(mediaQuery);
     mediaQuery.addListener(handleViewportChange);
     return () => {
-        mediaQuery.removeListener(handleViewportChange);
+      mediaQuery.removeListener(handleViewportChange);
     };
-}, []);
+  }, []);
 
 
   return (
@@ -74,10 +75,10 @@ const LandingPage = () => {
           </div>
         </div>
         {
-          !isMobile && 
+          !isMobile &&
           <Button className='d-btn affilate-btn'><img src={users} width={12} height={12} alt="" />Affilate Program</Button>
         }
-        
+
       </div>
       <div className="wrapper-adds-bar">
         <div className="inner-wrapper-ads">
@@ -89,9 +90,6 @@ const LandingPage = () => {
                 </div>
                 <div>
                   <img src={adverTwo} className='img-ads' alt="" />
-                </div>
-                <div>
-                  <img src={adverOne} className='img-ads' alt="" />
                 </div>
                 <div>
                   <img src={adverOne} className='img-ads' alt="" />
@@ -128,6 +126,20 @@ const LandingPage = () => {
         </div>
 
       </div>
+
+      <div className="main-products-container set-width-85">
+        <div className='head-products'><h3>Individual Products <span>Just Landing</span></h3></div>
+        <div className="wrapper-product-display product-container">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
+      </div>
+
+
 
       <div style={{ backgroundColor: "#F7F7F7", width: "100%", height: "200px", marginTop: "20vh" }}></div>
     </div>
