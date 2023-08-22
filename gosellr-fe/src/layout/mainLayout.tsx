@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 
-import homeIcon from "../assets/icons/home.svg"
-import bookings from "../assets/icons/fi-rs-notebook.svg"
+import homeIcon from "../assets/icons/home-res.svg"
+import cartIcon from "../assets/icons/cart-res.svg"
 import chat from "../assets/icons/fi-rr-comment.svg"
-import services from "../assets/icons/stars.svg"
+import trendingIcon from "../assets/icons/trending-res.svg"
 import plusIcon from "../assets/icons/plus-hex-icon.svg"
 import plusGif from "../assets/icons/animated/plus.gif"
 
@@ -43,24 +43,24 @@ const MainLayout = () => {
                 <>
                     <div className='bottom-nav-bar'>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={homeIcon} width={22} height={21} alt="" />
-                            <span>Home</span>
+                            <img src={homeIcon} width={23} height={23} alt="" />
+                            {/* <span>Home</span> */}
                         </div>
-                        <div className="nav-icons-box" onClick={() => navigate('./bookings')}>
-                            <img src={bookings} width={22} height={22} alt="" />
-                            <span>Bookings</span>
+                        <div className="nav-icons-box" onClick={() => navigate('./cart')}>
+                            <img src={cartIcon} width={23} height={23} alt="" />
+                            {/* <span>Cart</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => setVisible(true)}>
                             <img src={plusIcon} width={30} height={30} alt="" />
                             <span></span>
                         </div>
-                        <div className="nav-icons-box" onClick={() => navigate('./services')}>
-                            <img src={services} width={22} height={22} alt="" />
-                            <span>Services</span>
+                        <div className="nav-icons-box" onClick={() => navigate('./home')}>
+                            <img src={trendingIcon} width={23} height={23} alt="" />
+                            {/* <span>Verified</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./chat')}>
-                            <img src={chat} width={22} height={20} alt="" />
-                            <span>Chat</span>
+                            <img src={chat} width={23} height={23} alt="" />
+                            {/* <span>Chat</span> */}
                         </div>
                     </div>
                 </>

@@ -14,6 +14,7 @@ import arrowDown from "../../assets/icons/arrow-down-small.svg"
 import { useNavigate } from 'react-router-dom'
 import { lowerCategories } from '../../mock/lowerCategories'
 import ProductCard from '../../shared/productCard/productCard'
+import { dummyProducts } from '../../mock/dummyProducts'
 
 
 
@@ -86,13 +87,13 @@ const LandingPage = () => {
             <Col sm={24} md={16} lg={16}>
               <Carousel autoplay>
                 <div>
-                  <img src={adverOne} className='img-ads' alt="" />
+                  <img src="https://img.freepik.com/premium-vector/delicious-tortilla-chips-banner-with-flying-cheese-cookies_317442-577.jpg?w=1380" className='img-ads' alt="" />
                 </div>
                 <div>
-                  <img src={adverTwo} className='img-ads' alt="" />
+                  <img src="https://img.freepik.com/free-photo/big-sale-discounts-products_23-2150336701.jpg?w=996&t=st=1692716024~exp=1692716624~hmac=5f38ccdd988c707829a66a59b3e3b647124c75ee1a6f4b8bc7524c8d3073520a" className='img-ads' alt="" />
                 </div>
                 <div>
-                  <img src={adverOne} className='img-ads' alt="" />
+                  <img src={"https://elements-cover-images-0.imgix.net/594df528-54d5-4b18-ac9f-440dddb4c530?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=166e4dd4839a054c862542ef79075346"} className='img-ads' alt="" />
                 </div>
               </Carousel>
             </Col>
@@ -130,12 +131,12 @@ const LandingPage = () => {
       <div className="main-products-container set-width-85">
         <div className='head-products'><h3>Individual Products <span>Just Landing</span></h3></div>
         <div className="wrapper-product-display product-container">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {
+            dummyProducts.map((item:any) => (
+              <ProductCard productData={item} />
+            ))
+          }
+         
         </div>
       </div>
 

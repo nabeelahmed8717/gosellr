@@ -11,9 +11,15 @@
   .product-image {
     width: 100%;
     height: 178px;
-    background-color: gainsboro;
+    background-color: #f3f3f3;
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img{
+      max-width: 100%;
+      height: -webkit-fill-available;
+    }
   }
   .roll-cage {
     padding: 10px;
@@ -37,6 +43,10 @@
     }
     .badges-dept {
         margin-top: 5px;
+        margin-top: 5px;
+    display: flex;
+    gap: 7px;
+    height: 21px;
       .badge {
         width: fit-content;
         padding: 2px 7px;
@@ -61,6 +71,7 @@
         margin-top: 10px;
         span{
             font-size: 15px;
+            font-weight: 500;
             color: #e67e22;
         }
     }

@@ -2,19 +2,29 @@ import React from 'react'
 import "./productCard.scss"
 import { Rate } from 'antd'
 
-const ProductCard = ({ className }: any) => {
+const ProductCard = ({ className, productData }: any) => {
     return (
         <div className='product-main-wrapper product-card-wrapper'>
-            <div className="product-image"></div>
+            <div className="product-image">
+                <img src={productData?.productImage} alt="" />
+            </div>
             <div className="roll-cage">
                 <div className="product-title-and-discription">
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet  ipsum dolor sit amet</h3>
+                    <h3>{productData?.productLabel}</h3>
                 </div>
-                <Rate className="product-rating" disabled defaultValue={2} />
+                <Rate className="product-rating" disabled defaultValue={productData?.productRatings} />
                 <div className="badges-dept">
-                    <div className='badge badge-pss'><span>PSS</span></div>
+                    {
+                        productData?.verifications.includes("EDR") &&
+                        <div className='badge badge-edr'><span>EDR</span></div>
+                    }
+                    {
+                        productData?.verifications.includes("PSS") &&
+                        <div className='badge badge-pss'><span>PSS</span></div>
+                    }
+                    
                 </div>
-                <div className='product-price'><span>$20</span></div>
+                <div className='product-price'><span>{productData?.productPrice}</span></div>
             </div>
         </div>
     )
