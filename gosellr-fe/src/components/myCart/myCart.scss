@@ -1,9 +1,123 @@
-.bookings-mian-wrapper{
-    width: 80%;
-    margin: 0 auto;
-    .header-content{
-        padding: 42px 0px 23px 0px;
+.bookings-mian-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 900px){
+width: 90%;
+  }
+ 
+  .header-content {
+    padding: 42px 0px 23px 0px;
     border-bottom: 1px solid #e7e7e9;
-   
+  }
+
+  .cart-main-main-wrapper{
+    position: relative;
+    @media (max-width: 768px){
+        padding-bottom: 30vh;
     }
+    .side-fg-wrapper{
+        .ant-card-body{
+            @media (max-width: 768px){
+                padding: 0 !important;
+            }
+            
+        }
+    }
+    .checkout-wrapper {
+        background-color: #ffffff;
+
+        @media (max-width: 768px){
+            background-color: #ffffff;
+            padding: 13px 19px 16px;
+            position: fixed;
+            bottom: 58px;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            border-top: 1px solid #e7e7e9;
+        }
+       
+
+        .flex-checkout {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 15px;
+          font-weight: 500;
+          .over-all-price {
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+          }
+          .low-balance{
+            color: rgb(255, 39, 39);
+          }
+        }
+        button {
+          background-color: #fab529;
+          width: 100%;
+        //   border-radius: 15px;
+          border: none;
+          color: #000;
+          margin-top: 10px;
+        }
+      }
+    
+      .buyer-info-disp {
+        margin-top: 20px;
+        background-color: #dfdfdf3d;
+        padding: 15px;
+        border-radius: 15px;
+    
+        h2 {
+          font-size: 16px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          button {
+            border-radius: 50%;
+            padding: 0;
+            width: 35px;
+            height: 35px;
+          }
+        }
+        .buyer-info-gripper{
+            .flex-col{
+                margin-bottom: 6px;
+            }
+        }
+      }
+  }
+
+
+  
+}
+.buyer-info-wrapper {
+  .ant-form-item
+    .ant-form-item-label
+    > label.ant-form-item-required:not(
+      .ant-form-item-required-mark-optional
+    )::before {
+    display: none;
+  }
+  .ant-form-item .ant-form-item-label {
+    padding-bottom: 2px !important;
+    font-weight: 600;
+  }
+  .end-navigator {
+    color: #727272;
+    width: auto;
+
+    span {
+      color: #000;
+      font-weight: 600;
+      &:hover {
+        color: #2a56b8;
+      }
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 10px !important;
+  }
 }

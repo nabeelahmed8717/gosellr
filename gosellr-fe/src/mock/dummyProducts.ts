@@ -2,7 +2,7 @@ export const dummyProducts = [
     {
         productID: 1,
         productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgz-HX3jewf04u-DBlYZo1G5mxB5cgYe5fdg&usqp=CAU',
-        productLabel: "Wireless Bluetooth Headphones",
+        productLabel: "Wireless Bluetooth Headphones black ",
         productRatings: 5,
         verifications: ["PSS", "EDR"],
         productPrice: "$99"
@@ -10,7 +10,7 @@ export const dummyProducts = [
     {
         productID: 2,
         productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShszFdCpul3-m6-wAOme7Q_3vo422VPYNY3g&usqp=CAU',
-        productLabel: "Smartphone Tripod with Remote",
+        productLabel: "Smartphone Tripod with Remote best quality",
         productRatings: 4,
         verifications: ["PSS"],
         productPrice: "$19"
@@ -26,7 +26,7 @@ export const dummyProducts = [
     {
         productID: 3,
         productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHgLvSmWSnHYUgo2XC4Lkn0XU12PSzORGqA&usqp=CAU',
-        productLabel: "Portable Power Bank 10000mAh",
+        productLabel: "Portable Power Bank 10000mAh (Fast charging)",
         productRatings: 2,
         verifications: ["EDR"],
         productPrice: "$29"
@@ -34,7 +34,7 @@ export const dummyProducts = [
     {
         productID: 5,
         productImage: 'https://www.iheartpublix.com/wp-content/uploads/2022/02/Stonyfield-Tub-scaled-1600x1200.jpg',
-        productLabel: "Organic Greek Yogurt (32 oz)",
+        productLabel: "Organic Greek Yogurt (32 oz) good for health ",
         productRatings: 4,
         verifications: ["PSS", "EDR"],
         productPrice: "$5.79"
@@ -42,7 +42,7 @@ export const dummyProducts = [
     {
         productID: 4,
         productImage: 'https://www.businessinsider.in/photo/85834062/best-waterproof-laptop-bags-in-india.jpg?imgsize=29292',
-        productLabel: "Waterproof Laptop Backpack",
+        productLabel: "Waterproof Laptop Backpack ",
         productRatings: 3,
         verifications: [],
         productPrice: "$49"
@@ -58,7 +58,7 @@ export const dummyProducts = [
     {
         productID: 6,
         productImage: 'https://www.31daily.com/wp-content/uploads/2021/04/md-100-Whole-Wheat-Bread-11-1-of-1-scaled.jpg',
-        productLabel: "Whole Grain Bread",
+        productLabel: "Whole Grain Bread : Vitamin Enriched Milky Bread Large",
         productRatings: 4,
         verifications: ["EDR", "PSS"],
         productPrice: "$3.49"
