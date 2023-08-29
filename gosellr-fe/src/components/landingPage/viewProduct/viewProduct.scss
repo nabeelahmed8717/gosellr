@@ -1,0 +1,132 @@
+.view-product-main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  .image-viewer-flex-cards-wrapper {
+    .image-viewer-container {
+      background-color: #e6e6e6;
+      width: 100%;
+      height: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        height: -webkit-fill-available;
+      }
+    }
+    .image-scroll-view {
+      //   display: flex;
+      //   align-items: center;
+      //   overflow: hidden;
+      position: relative;
+      .scroll-button {
+        background-color: #fab529;
+        padding: 0 0;
+        height: 30px;
+        width: 30px;
+        padding-top: 2px;
+        transition: 0.3s;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 28px;
+        opacity: 0.6;
+        transition: 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .left-btn {
+        left: -8px;
+        img {
+          width: 20px;
+          height: 20px;
+          transform: rotate(90deg);
+          filter: invert(1) brightness(1.5);
+        }
+      }
+      .right-btn {
+        right: -8px;
+        img {
+          width: 20px;
+          height: 20px;
+          transform: rotate(270deg);
+          filter: invert(1) brightness(1.5);
+        }
+      }
+    }
+    .flex-image-container {
+      margin-top: 15px;
+      overflow: scroll;
+      display: -webkit-box;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      gap: 10px;
+      padding: 0 16px;
+      &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+      .box-image {
+        background-color: #e6e6e6;
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: -webkit-fill-available;
+          height: -webkit-fill-available;
+        }
+      }
+    }
+  }
+  .product-details-main {
+    .product-main-label {
+      color: #212121;
+      font-size: 22px;
+      font-weight: 500;
+      word-break: break-word;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .main-tags {
+      margin-top: 10px;
+      .tsg-tag {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .tag-free-shipping {
+        background-color: #27ae6026;
+        color: #27ae60;
+      }
+    }
+    .ratings {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      .product-rating {
+        .ant-rate-star {
+          font-size: 13px;
+          color: #fab529;
+          margin-inline-end: 4px;
+        }
+      }
+      p {
+        color: #9c9c9c;
+        font-size: 14px;
+      }
+    }
+  }
+}

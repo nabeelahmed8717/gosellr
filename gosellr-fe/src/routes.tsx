@@ -21,6 +21,7 @@ const Loadable = (Component: LazyExoticComponent<FC>) => (props: any) =>
 );
 const MainLayout = Loadable(lazy(() => import("./layout/mainLayout")));
 const LandingPage = Loadable(lazy(() => import("./pages/landingPage")));
+const ViewProduct = Loadable(lazy(() => import("./pages/viewProduct")));
 const SignIn = Loadable(lazy(() => import("./pages/signIn")));
 const SignUp = Loadable(lazy(() => import("./pages/signUp")));
 const Chat = Loadable(lazy(() => import("./pages/chat")));
@@ -57,6 +58,10 @@ export const routes: any = [
       {
         path: "user-profile",
         element: <UserProfile />,
+      },
+      {
+        path: "view-Product",
+        element: <ViewProduct />,
       },
     ],
   },

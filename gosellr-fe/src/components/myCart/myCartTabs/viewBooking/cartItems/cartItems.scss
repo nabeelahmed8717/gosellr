@@ -20,6 +20,9 @@
     }
   }
   .gripper-products-utills {
+    @media (max-width: 768px){
+      width: 70%;
+  }
     h3 {
       font-size: 16px;
       font-weight: 500;

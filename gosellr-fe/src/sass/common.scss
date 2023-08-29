@@ -5,7 +5,7 @@
 .btn-secondary {
   border: none;
   color: $white-color;
-  padding: 12px 35px;
+  padding: 0px 35px;
   line-height: $line-height-20;
   font-size: $fs-16;
   font-weight: $fw-600;
@@ -48,6 +48,8 @@
 
 .btn-cancel {
   background-color: $cancle-button-background;
+  color: #515151;
+  
 }
 
 .dark-brown-color {
@@ -383,6 +385,9 @@
   }
 }
 
+.btn-yellow{
+  background-color: #FAB529;
+}
 
 // ####### Common Border Class #######
 .common-border {

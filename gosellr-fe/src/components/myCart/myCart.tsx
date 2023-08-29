@@ -37,7 +37,7 @@ const MyCart = () => {
         <p className='fs-16 light-grey'>View and Track Your Orders</p>
       </div>
 
-      <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+      <Tabs defaultActiveKey="1" items={items} onChange={onChange} className='tabs-cart' />
 
 
     </div>

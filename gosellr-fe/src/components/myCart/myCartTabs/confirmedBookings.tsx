@@ -3,68 +3,34 @@ import React from 'react'
 import type { TabsProps } from 'antd';
 import { ColumnsType } from 'antd/es/table';
 import cancelIcon from "../../../assets/icons/cancel-colored.svg"
+import CartItem from './viewBooking/cartItems/cartItems';
 
 const ConfirmedBookings = () => {
 
-
-    interface DataType {
-        key: string;
-        name: string;
-      }
-      
-      const columns: ColumnsType<any> = [
-        {
-          title: 'Seller Name',
-          dataIndex: 'sellerName',
-          key: 'sellerName',
-        },
-        {
-          title: 'Service Tag',
-          dataIndex: 'serviceTag',
-          key: 'serviceTag',
-        },
-        {
-          title: 'Service Type',
-          dataIndex: 'serviceType',
-          key: 'serviceType',
-        },
-        {
-          title: 'Booking Date',
-          dataIndex: 'bookingDate',
-          key: 'bookingDate',
-        },
-        {
-          title: 'Payment Status',
-          dataIndex: 'paymentStatus',
-          key: 'paymentStatus',
-        }
-        
-      ];
-      
-      const bookingsData: any[] = [
-        {
-          key: '1',
-          sellerName: 'John Brown',
-          serviceTag: 'House Cleaning',
-          serviceType: 'Conditional',
-          bookingDate: '01-05-2023',
-          paymentStatus: 'Paid',
-        },
-        {
-          key: '2',
-          sellerName: 'Sara Andrew',
-          serviceTag: 'IT Consultant',
-          serviceType: 'Un Conditional',
-          bookingDate: '16-05-2023',
-          paymentStatus: 'Un Paid',
-        },
-      ];
-
+  const bookedProducts: any = [
+    {
+      productID: 1,
+      productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgz-HX3jewf04u-DBlYZo1G5mxB5cgYe5fdg&usqp=CAU',
+      productLabel: "Wireless Bluetooth Headphones black ",
+      quantity: 3,
+      productPrice: 99,
+    },
+    {
+      productID: 2,
+      productImage: 'https://www.iheartpublix.com/wp-content/uploads/2022/02/Stonyfield-Tub-scaled-1600x1200.jpg',
+      productLabel: "Organic Greek Yogurt (32 oz) good for health",
+      quantity: 4,
+      productPrice: 5,
+    },
+  
+  ];
+  
+ 
 
   return (
-    <div className="wrapper-table">
-      <Table columns={columns} dataSource={bookingsData} scroll={{ x: "max-content" }}/>
-    </div>
+   <div>
+    
+   </div>
   )
 }
 

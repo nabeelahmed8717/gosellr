@@ -153,7 +153,11 @@ const PendingBookings: React.FC = () => {
                   </Form.Item>
                 </Col>
 
-                <Button>Update</Button>
+                
+                <div className="d-flex" style={{gap:"10px", justifyContent:"flex-end", padding:"10px"}}>
+                <Button className="btn-cancel d-btn">Cancel</Button>
+                <Button className="btn-yellow d-btn">Update</Button>
+                </div>
               </Row>
             </Form>
           </div>
