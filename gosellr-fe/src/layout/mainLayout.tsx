@@ -43,11 +43,11 @@ const MainLayout = () => {
                 <>
                     <div className='bottom-nav-bar'>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={homeIcon} width={23} height={23} alt="" />
+                            <img src={homeIcon} width={21} height={21} alt="" />
                             {/* <span>Home</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./cart')}>
-                            <img src={cartIcon} width={23} height={23} alt="" />
+                            <img src={cartIcon} width={21} height={21} alt="" />
                             {/* <span>Cart</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => setVisible(true)}>
@@ -55,11 +55,11 @@ const MainLayout = () => {
                             <span></span>
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={trendingIcon} width={23} height={23} alt="" />
+                            <img src={trendingIcon} width={21} height={21} alt="" />
                             {/* <span>Verified</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./chat')}>
-                            <img src={chat} width={23} height={23} alt="" />
+                            <img src={chat} width={21} height={21} alt="" />
                             {/* <span>Chat</span> */}
                         </div>
                     </div>

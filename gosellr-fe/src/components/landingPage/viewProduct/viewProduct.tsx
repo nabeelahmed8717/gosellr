@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./viewProduct.scss"
-import { Button, Carousel, Col, Rate, Row } from 'antd'
+import { Button, Carousel, Col, Progress, Rate, Row } from 'antd'
 import arrowDown from "../../../assets/icons/arrow-down-small.svg"
 import shippingIcon from "../../../assets/icons/shipping.svg"
+import ProductRatings from './productRatings/productRatings'
 
 
 const productImages = [
@@ -28,6 +29,25 @@ const productImages = [
     },
 ]
 
+const product_details = [
+    "Wireless Bluetooth 5.0 connection",
+    "Over-ear design with soft earcups",
+    "Foldable for easy portability",
+    "Built-in microphone for hands-free calling",
+    "FM radio function",
+    "Bass boost",
+    "3.5mm audio jack",
+    "Up to 15 hours of battery life",
+    "Lightweight and comfortable to wear",
+    "Stylish and modern design",
+    "Supports HSP, HFP, A2DP, and AVRCP profiles",
+    "Frequency range: 2.4026 GHz-2.480 GHz",
+    "Sensitivity: 105dB+ / - 3dB",
+    "Impedance: 32ohm",
+    "Battery capacity: 300mAh",
+    "Charging time: 2-3 hours"
+]
+
 const ViewProduct = () => {
 
     const [isMobile, setIsMobile] = useState(false);
@@ -38,6 +58,8 @@ const ViewProduct = () => {
     const [imageViewerUrl, setImageViewerUrl] = useState(productImages[0])
 
     const colorVariants = ['#2980b9', '#2ecc71', '#8e44ad'];
+    // const sizeVariants = ['XS', 'SM', 'MD', 'LG'];
+
     const [selectedColor, setSelectedColor] = useState('');
 
     const handleColorSelection = (color: any) => {
@@ -72,7 +94,6 @@ const ViewProduct = () => {
         <div className='view-product-main-wrapper'>
             <Row gutter={[20, 20]} style={{ margin: "0px" }}>
                 <Col sm={24} md={24} lg={7} className='wrapper-coursel-config'>
-
                     {
                         !isMobile ?
                             <div className="image-viewer-flex-cards-wrapper">
@@ -110,21 +131,27 @@ const ViewProduct = () => {
                                 </Carousel>
                             </div>
                     }
-
-
-
-
-
                 </Col>
                 <Col sm={24} md={24} lg={12}>
                     <div className="product-details-main">
                         <div className="product-main-label">
                             P47 Black Wireless Bluetooth Headphones Over Ear Foldable Headset for Music Calling Talking FM Ratio Pubg Gaming with Mic Microphone Stereo Bass 3.5mm
                         </div>
-                        <div className="main-tags">
-                            <div className="tsg-tag tag-free-shipping ">
-                                <img src={shippingIcon} width={15} height={15} alt="" />
-                                <span>Free Shipping</span>
+
+                        <div className="flex-rev-bv">
+                            <div className="main-tags">
+                                <div className="tsg-tag tag-free-shipping ">
+                                    <img src={shippingIcon} width={15} height={15} alt="" />
+                                    <span>Free Shipping</span>
+                                </div>
+                            </div>
+                            <div className="verifications">
+                                <h5>Verifications</h5>
+                                <div className="badges-dept">
+                                    <div className='badge badge-edr'><span>EDR</span></div>
+                                    <div className='badge badge-pss'><span>PSS</span></div>
+
+                                </div>
                             </div>
                         </div>
 
@@ -154,8 +181,82 @@ const ViewProduct = () => {
 
                     </div>
                 </Col>
-                <Col sm={24} md={24} lg={5}>sdasd</Col>
+                <Col sm={24} md={24} lg={5}></Col>
             </Row>
+
+            <div className="section-two">
+                <div className="about-product">
+                    <h4>Product Details</h4>
+                    <Row>
+                        {
+                            product_details.map((item) => (
+                                <Col className='product-disp-s' xs={24} sm={24} md={24} lg={12}>{item}</Col>
+                            ))
+                        }
+                    </Row>
+                </div>
+
+                <div className="ratings-product">
+                    <h4>Product Ratings and Reviews</h4>
+                    <div className="ratings-wrapper-ov">
+                        <Row>
+                            <Col sm={24} md={6} lg={6}>
+                                <div className="box-ov-rating">
+                                    <div className='flex-rat'>
+                                        <p>4.2<span>/5</span></p>
+                                        <Rate className="product-rating" disabled defaultValue={3.5} />
+                                        <h6>128 Ratings</h6>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col sm={24} md={18} lg={18}>
+                                <div className="bars-ratings">
+                                    <div className="rat-bar-num">
+                                        <Rate className="product-rating" disabled defaultValue={5} />
+                                        <Progress className='rat-progress' style={{ width: "160px" }} showInfo={false} percent={60} />
+                                        <p>90</p>
+                                    </div>
+                                    <div className="rat-bar-num">
+                                        <Rate className="product-rating" disabled defaultValue={4} />
+                                        <Progress className='rat-progress' style={{ width: "160px" }} showInfo={false} percent={20} />
+                                        <p>6</p>
+                                    </div>
+                                    <div className="rat-bar-num">
+                                        <Rate className="product-rating" disabled defaultValue={3} />
+                                        <Progress className='rat-progress' style={{ width: "160px" }} showInfo={false} percent={25} />
+                                        <p>7</p>
+                                    </div>
+                                    <div className="rat-bar-num">
+                                        <Rate className="product-rating" disabled defaultValue={2} />
+                                        <Progress className='rat-progress' style={{ width: "160px" }} showInfo={false} percent={2} />
+                                        <p>5</p>
+                                    </div>
+                                    <div className="rat-bar-num">
+                                        <Rate className="product-rating" disabled defaultValue={1} />
+                                        <Progress className='rat-progress' style={{ width: "160px" }} showInfo={false} percent={30} />
+                                        <p>20</p>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+
+
+                    </div>
+
+                    <div className="user-review-wrapper">
+                        <ProductRatings/>
+                        <ProductRatings/>
+                        <ProductRatings/>
+                        <ProductRatings/>
+                    </div>
+                </div>
+            </div>
+
+
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     )
 }

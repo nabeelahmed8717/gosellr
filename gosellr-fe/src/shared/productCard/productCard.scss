@@ -10,7 +10,7 @@
   overflow: hidden;
   transition: 0.3s;
   cursor: pointer;
-  &:hover{
+  &:hover {
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   }
   .product-image {
@@ -21,7 +21,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    img{
+    img {
       max-width: 100%;
       height: -webkit-fill-available;
     }
@@ -47,11 +47,11 @@
       }
     }
     .badges-dept {
-        margin-top: 5px;
-        margin-top: 5px;
-    display: flex;
-    gap: 7px;
-    height: 21px;
+      margin-top: 5px;
+      margin-top: 5px;
+      display: flex;
+      gap: 7px;
+      height: 21px;
       .badge {
         width: fit-content;
         padding: 2px 7px;
@@ -72,13 +72,13 @@
         color: #27ae60;
       }
     }
-    .product-price{
-        margin-top: 10px;
-        span{
-            font-size: 15px;
-            font-weight: 500;
-            color: #e67e22;
-        }
+    .product-price {
+      margin-top: 10px;
+      span {
+        font-size: 15px;
+        font-weight: 500;
+        color: #e67e22;
+      }
     }
   }
 }
