@@ -1,21 +1,22 @@
 .wrapper-avd {
   background-color: rgb(16 16 16 / 41%);
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: 10;
-    backdrop-filter: blur(12px);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  backdrop-filter: blur(12px);
 
   animation: opacity0 0.2s ease-in-out forwards;
   transition: 0.2s;
-  // backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(14px) !important;
 
   @keyframes opacity0 {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -29,118 +30,94 @@
     height: 100%;
     top: 0;
   }
-  .advance-filter-modal {
-    // background-color: #ffffff0a !important;
-    position: relative;
-    width: 40%;
-    padding: 10px !important;
-    margin: 0 auto;
-    margin-top: 5px;
-   
+}
 
-    .ant-modal {
-      width: 100% !important;
+.advance-filter-modal {
+  // background-color: #ffffff0a !important;
+  position: relative;
+  width: 40%;
+  padding: 10px !important;
+  margin: 0 auto;
+  margin-top: 5px;
+
+
+  .ant-modal {
+    width: 100% !important;
+  }
+
+  .ant-modal-content {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .search-results {
+    background-color: #ffffffe6;
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 12px;
+    padding: 5px;
+
+    .wrapper-results {
+      // overflow: scroll;
+      // width: 100%;
+      // max-height: 300px;
+      // padding: 10px;
+      overflow: scroll;
+    width: 100%;
+    max-height: 300px;
+    /* padding: 10px; */
+    border-radius: 9px;
+    // overflow: hidden;
+
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 0px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 20px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
     }
-    .ant-modal-content {
-      width: 40%;
-      margin: 0 auto;
-      background-color: transparent !important;
-      box-shadow: none !important;
-    }
-    .input-adv-search-modal-func {
+
+    .result-box {
       background-color: #ffffff;
-      height: 55px;
-      border-radius: 30px;
-      padding: 0px 15px;
-      overflow: hidden;
-    }
-    .search-results {
-      background-color: #ffffffe6;
       width: 100%;
-      height: auto;
-      margin-top: 8px;
-      border-radius: 12px;
-      padding: 5px;
+      padding: 0px 10px;
 
-      .wrapper-results {
-        overflow: scroll;
-        width: 100%;
-        max-height: 300px;
-        padding: 10px;
-
-        &::-webkit-scrollbar {
-          width: 5px;
-          height: 0px;
-        }
-        &::-webkit-scrollbar-track {
-          background: #ffffff;
-        }
-        &::-webkit-scrollbar-thumb {
-          background: #888;
-          border-radius: 20px;
-        }
-        &::-webkit-scrollbar-thumb:hover {
-          background: #555;
+      .out-put-sr {
+        display: flex;
+        align-items: center;
+        padding: 4px 13px;
+        // border-bottom: 1px solid #e7e7e9;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+          background-color: #f4f4f4;
+          border-radius: 8px;
+          // border-bottom: 1px solid #ffffff;
         }
       }
 
-      .result-box {
-        background-color: #ffffff;
-        width: 100%;
-        height: 60px;
-        border-radius: 5px;
-        .highlighted-text {
-          background-color: #4dccff2b;
-          font-weight: 600;
-        }
+      .highlighted-text {
+        background-color: #fab5297a;
+        font-weight: 600;
       }
-    }
 
-    
-  }
-
-  .new-features-quiklers {
-    width: fit-content;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 35vh;
-    display: flex;
-    gap: 2vw;
-    justify-content: center;
-   
-    background-color: #0000001f;
-    padding: 39px;
-    border-radius: 17px;
-
-    animation: opacity2 0.9s ease-in-out forwards;
-  transition: 0.9s;
-  // backdrop-filter: blur(14px) !important;
-
-  @keyframes opacity2 {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
-  
-    .cards-nx-features {
-      background-color: #ffffff9f;
-      width: 200px;
-      height: 300px;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: 0.3s;
-      cursor: pointer;
-      &:hover{
-        transform: scale(1.05)
-      }
-      img{
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
+
 
 }

@@ -1,0 +1,52 @@
+.cascader {
+    position: absolute;
+    background-color: #ffffff;
+    display: flex;
+    top: 70px;
+    z-index: 16;
+    height: 379px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+
+    .main-categories {
+        width: 190px;
+        padding: 4px 1px;
+        font-weight: 400;
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 4px 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+            opacity: 0.7;
+            &:hover {
+                background-color: #f6f6f6;
+                opacity: 1;
+            }
+        }
+    }
+
+    .sub-categories {
+        width: 180px;
+        padding: 10px 10px;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        font-size: 15px;
+
+        p {
+            padding: 4px 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e4e4e4;
+            }
+        }
+    }
+}

@@ -15,6 +15,7 @@ import { useNavigate } from 'react-router-dom'
 import { lowerCategories } from '../../mock/lowerCategories'
 import ProductCard from '../../shared/productCard/productCard'
 import { dummyProducts } from '../../mock/dummyProducts'
+import Cascader from './cascader'
 
 
 
@@ -26,6 +27,8 @@ const LandingPage = () => {
   const cardContainerRef: any = useRef(null);
 
   const [isMobile, setIsMobile] = useState(false);
+
+  const [isHamburderActive, setIsHamburderActive] = useState(false)
 
   const handleScroll = (scrollOffset: any) => {
     if (cardContainerRef.current) {
@@ -70,7 +73,7 @@ const LandingPage = () => {
     <div className='wrapper-main-landing-page'>
       <div className="category-open-bar-wrapper">
         <div className="section-one">
-          <Button className='d-btn hamburger-btn fs-14'><img src={hamburger} width={15} height={15} alt="" />Shop By Category</Button>
+          <Button className='d-btn hamburger-btn fs-14' onClick={() => setIsHamburderActive(!isHamburderActive)}><img src={hamburger} width={15} height={15} alt="" />Shop By Category</Button>
           <div className="outh-category">
             <p><img src={bolt} width={12} height={12} alt="" />Deals Today</p>
           </div>
@@ -79,8 +82,11 @@ const LandingPage = () => {
           !isMobile &&
           <Button className='d-btn affilate-btn'><img src={users} width={12} height={12} alt="" />Affilate Program</Button>
         }
-
+        {isHamburderActive && <Cascader isHamburderActive={isHamburderActive} />}
       </div>
+
+
+
       <div className="wrapper-adds-bar">
         <div className="inner-wrapper-ads">
           <Row gutter={[20, 20]}>
@@ -132,11 +138,11 @@ const LandingPage = () => {
         <div className='head-products'><h3>Individual Products <span>Just Landing</span></h3></div>
         <div className="wrapper-product-display product-container">
           {
-            dummyProducts.map((item:any) => (
+            dummyProducts.map((item: any) => (
               <ProductCard productData={item} />
             ))
           }
-         
+
         </div>
       </div>
 

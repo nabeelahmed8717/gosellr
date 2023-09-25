@@ -1,602 +1,302 @@
-export const overallServicesData = [
+export const searchKeywordsData = [
     {
         key: '1',
-        label: 'Consultant',
+        label: 'Mens Jacket',
         trending: true,
-        type: 'unConditional'
+        type: 'product'
     },
     {
         key: '2',
-        label: 'Plumber',
-        trending: false,
-        type: 'conditional'
+        label: 'Cooking items',
+        trending: true,
+        type: 'product'
     },
     {
         key: '3',
-        label: 'Electrician',
-        trending: false,
-        type: 'conditional'
+        label: 'Mobile accessories',
+        trending: true,
+        type: 'product'
     },
     {
         key: '4',
-        label: 'Carpenter',
-        trending: false,
-        type: 'conditional'
+        label: 'Repairing kit',
+        trending: true,
+        type: 'product'
     },
     {
         key: '5',
-        label: 'Painter',
-        trending: false,
-        type: 'conditional'
+        label: 'Women\'s Shoes',
+        trending: true,
+        type: 'product'
     },
     {
         key: '6',
-        label: 'Gardener',
-        trending: false,
-        type: 'conditional'
+        label: 'Electronics',
+        trending: true,
+        type: 'product'
     },
     {
         key: '7',
-        label: 'Roofing Contractor',
-        trending: false,
-        type: 'conditional'
+        label: 'Furniture',
+        trending: true,
+        type: 'product'
     },
     {
         key: '8',
-        label: 'Interior Designer',
-        trending: false,
-        type: 'service'
+        label: 'Beauty Products',
+        trending: true,
+        type: 'product'
     },
     {
         key: '9',
-        label: 'Architect',
-        trending: false,
-        type: 'service'
+        label: 'Sportswear',
+        trending: true,
+        type: 'product'
     },
     {
         key: '10',
-        label: 'Landscaper',
-        trending: false,
-        type: 'service'
+        label: 'Home Decor',
+        trending: true,
+        type: 'product'
     },
     {
         key: '11',
-        label: 'Event Planner',
-        trending: false,
-        type: 'service'
+        label: 'Books',
+        trending: true,
+        type: 'product'
     },
     {
         key: '12',
-        label: 'Photographer',
-        trending: false,
-        type: 'service'
+        label: 'Toys',
+        trending: true,
+        type: 'product'
     },
     {
         key: '13',
-        label: 'Web Developer',
-        trending: false,
-        type: 'unConditional'
+        label: 'Kitchen Appliances',
+        trending: true,
+        type: 'product'
     },
     {
         key: '14',
-        label: 'Graphic Designer',
-        trending: false,
-        type: 'unConditional'
+        label: 'Outdoor Gear',
+        trending: true,
+        type: 'product'
     },
     {
         key: '15',
-        label: 'Personal Trainer',
-        trending: false,
-        type: 'service'
+        label: 'Health and Wellness',
+        trending: true,
+        type: 'product'
     },
     {
         key: '16',
-        label: 'Massage Therapist',
-        trending: false,
-        type: 'service'
+        label: 'Garden Supplies',
+        trending: true,
+        type: 'product'
     },
     {
         key: '17',
-        label: 'Tutor',
-        trending: false,
-        type: 'unConditional'
+        label: 'Pet Supplies',
+        trending: true,
+        type: 'product'
     },
     {
         key: '18',
-        label: 'Accountant',
-        trending: false,
-        type: 'unConditional'
+        label: 'Office Supplies',
+        trending: true,
+        type: 'product'
     },
     {
         key: '19',
-        label: 'Lawyer',
-        trending: false,
-        type: 'service'
+        label: 'Jewelry',
+        trending: true,
+        type: 'product'
     },
     {
         key: '20',
-        label: 'Cleaning Service',
-        trending: false,
-        type: 'service'
+        label: 'Home Appliances',
+        trending: true,
+        type: 'product'
     },
     {
         key: '21',
-        label: 'Handyman',
-        trending: false,
-        type: 'service'
+        label: 'Fitness Equipment',
+        trending: true,
+        type: 'product'
     },
     {
         key: '22',
-        label: 'Chef',
-        trending: false,
-        type: 'service'
+        label: 'Toiletries',
+        trending: true,
+        type: 'product'
     },
     {
         key: '23',
-        label: 'Locksmith',
-        trending: false,
-        type: 'service'
+        label: 'Kids Clothing',
+        trending: true,
+        type: 'product'
     },
     {
         key: '24',
-        label: 'Mover',
-        trending: false,
-        type: 'service'
+        label: 'Electrical Supplies',
+        trending: true,
+        type: 'product'
     },
     {
         key: '25',
-        label: 'Pet Groomer',
-        trending: false,
-        type: 'service'
+        label: 'Travel Accessories',
+        trending: true,
+        type: 'product'
     },
     {
         key: '26',
-        label: 'IT Support',
-        trending: false,
-        type: 'unConditional'
+        label: 'Art and Craft Supplies',
+        trending: true,
+        type: 'product'
     },
     {
         key: '27',
-        label: 'Videographer',
-        trending: false,
-        type: 'service'
+        label: 'Automotive Parts',
+        trending: true,
+        type: 'product'
     },
     {
         key: '28',
-        label: 'Fitness Instructor',
-        trending: false,
-        type: 'service'
+        label: 'Baby Products',
+        trending: true,
+        type: 'product'
     },
     {
         key: '29',
-        label: 'Yoga Instructor',
-        trending: false,
-        type: 'service'
+        label: 'Watches',
+        trending: true,
+        type: 'product'
     },
     {
         key: '30',
-        label: 'Home Inspector',
-        trending: false,
-        type: 'service'
+        label: 'Home Furniture',
+        trending: true,
+        type: 'product'
     },
     {
         key: '31',
-        label: 'Wedding Planner',
-        trending: false,
-        type: 'service'
+        label: 'Audio Equipment',
+        trending: true,
+        type: 'product'
     },
     {
         key: '32',
-        label: 'Travel Agent',
-        trending: false,
-        type: 'service'
+        label: 'Men\'s Clothing',
+        trending: true,
+        type: 'product'
     },
     {
         key: '33',
-        label: 'Car Mechanic',
+        label: 'Women\'s Clothing',
         trending: true,
-        type: 'service'
+        type: 'product'
     },
     {
         key: '34',
-        label: 'Tailor',
-        trending: false,
-        type: 'service'
+        label: 'Camping Gear',
+        trending: true,
+        type: 'product'
     },
     {
         key: '35',
-        label: 'Babysitter',
-        trending: false,
-        type: 'service'
+        label: 'Luggage',
+        trending: true,
+        type: 'product'
     },
     {
         key: '36',
-        label: 'Dog Walker',
-        trending: false,
-        type: 'service'
+        label: 'Kitchenware',
+        trending: true,
+        type: 'product'
     },
     {
         key: '37',
-        label: 'Mobile App Developer',
-        trending: false,
-        type: 'service'
+        label: 'DIY Tools',
+        trending: true,
+        type: 'product'
     },
     {
         key: '38',
-        label: 'Copywriter',
+        label: 'Computer Accessories',
         trending: true,
-        type: 'service'
+        type: 'product'
     },
     {
         key: '39',
-        label: 'Marketing Consultant',
-        trending: false,
-        type: 'service'
+        label: 'Stationery',
+        trending: true,
+        type: 'product'
     },
     {
         key: '40',
-        label: 'Financial Advisor',
-        trending: false,
-        type: 'service'
+        label: 'Gourmet Food',
+        trending: true,
+        type: 'product'
     },
     {
         key: '41',
-        label: 'Real Estate Agent',
+        label: 'Home Improvement',
         trending: true,
-        type: 'service'
+        type: 'product'
     },
     {
         key: '42',
-        label: 'Security Guard',
-        trending: false,
-        type: 'service'
+        label: 'Gaming Consoles',
+        trending: true,
+        type: 'product'
     },
     {
         key: '43',
-        label: 'Event Caterer',
-        trending: false,
-        type: 'service'
+        label: 'Bicycles',
+        trending: true,
+        type: 'product'
     },
     {
         key: '44',
-        label: 'Carpet Cleaner',
-        trending: false,
-        type: 'service'
+        label: 'Cosmetics',
+        trending: true,
+        type: 'product'
     },
     {
         key: '45',
-        label: 'Computer Repair Service',
+        label: 'Party Supplies',
         trending: true,
-        type: 'service'
+        type: 'product'
     },
     {
         key: '46',
-        label: 'Window Cleaner',
-        trending: false,
-        type: 'service'
+        label: 'Smart Home Devices',
+        trending: true,
+        type: 'product'
     },
     {
         key: '47',
-        label: 'Wedding Photographer',
-        trending: false,
-        type: 'service'
+        label: 'School Supplies',
+        trending: true,
+        type: 'product'
     },
     {
         key: '48',
-        label: 'Hair Stylist',
-        trending: false,
-        type: 'service'
+        label: 'Candles',
+        trending: true,
+        type: 'product'
     },
     {
         key: '49',
-        label: 'Makeup Artist',
-        trending: false,
-        type: 'service'
+        label: 'Cookware',
+        trending: true,
+        type: 'product'
     },
     {
         key: '50',
-        label: 'Social Media Manager',
+        label: 'Video Games',
         trending: true,
-        type: 'service'
+        type: 'product'
     },
-    {
-        key: '51',
-        label: 'Content Writer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '52',
-        label: 'Translator',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '53',
-        label: 'Financial Planner',
-        trending: true,
-        type: 'service'
-    },
-    {
-        key: '54',
-        label: 'Virtual Assistant',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '55',
-        label: 'Home Stager',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '56',
-        label: 'Furniture Assembler',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '57',
-        label: 'DJ',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '58',
-        label: 'Language Tutor',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '59',
-        label: 'Caterer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '60',
-        label: 'Home Organizer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '61',
-        label: 'Life Coach',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '62',
-        label: 'Dog Trainer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '63',
-        label: 'Software Developer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '64',
-        label: 'Logo Designer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '65',
-        label: 'Business Coach',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '66',
-        label: 'Proofreader',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '67',
-        label: 'SEO Specialist',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '68',
-        label: 'Business Consultant',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '69',
-        label: 'Wedding Officiant',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '70',
-        label: 'House Cleaner',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '71',
-        label: 'Guitar Teacher',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '72',
-        label: 'Math Tutor',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '73',
-        label: 'Financial Analyst',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '74',
-        label: 'Resume Writer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '75',
-        label: 'Proofreader',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '76',
-        label: 'House Sitter',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '77',
-        label: 'Math Tutor',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '78',
-        label: 'Life Coach',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '79',
-        label: 'Personal Shopper',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '80',
-        label: 'Party Planner',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '81',
-        label: 'Career Coach',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '82',
-        label: 'Resume Writer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '83',
-        label: 'Virtual Assistant',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '84',
-        label: 'Translator',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '85',
-        label: 'Social Media Manager',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '86',
-        label: 'Content Writer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '87',
-        label: 'Graphic Designer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '88',
-        label: 'Website Designer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '89',
-        label: 'Photographer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '90',
-        label: 'Videographer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '91',
-        label: 'Wedding Planner',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '92',
-        label: 'Event Planner',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '93',
-        label: 'Caterer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '94',
-        label: 'Medical Consultant',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '95',
-        label: 'Bartender',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '96',
-        label: 'Florist',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '97',
-        label: 'Interior Designer',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '98',
-        label: 'Home Stager',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '99',
-        label: 'Home Inspector',
-        trending: false,
-        type: 'service'
-    },
-    {
-        key: '100',
-        label: 'Home Organizer',
-        trending: false,
-        type: 'service'
-    }
 ]
