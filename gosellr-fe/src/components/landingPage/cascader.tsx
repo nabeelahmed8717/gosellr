@@ -48,7 +48,7 @@ const Cascader = ({ isHamburderActive, setIsHamburderActive }: any) => {
                 </div>}
                 {
                     categories.map((item: any) => (
-                        <p onClick={() => (setSubcategoryActive(true), setSubToSubcategoryActiveData([]), setSubcategoryActiveData(item.subcategories), setactiveMenuHeadSub(item.name))}> <img src={item.icon} width={14} alt="" /> {item.name}</p>
+                        <p onClick={() => (setSubcategoryActive(true), setSubToSubcategoryActiveData([]), setSubcategoryActiveData(item.subcategories), setactiveMenuHeadSub(item.name))}> <img src={item.icon} width={isMobile ? 20 : 14} alt="" /> {item.name}</p>
                     ))
                 }
             </div>
