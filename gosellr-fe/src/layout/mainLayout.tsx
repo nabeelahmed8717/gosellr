@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
+import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 
 import homeIcon from "../assets/icons/home-res.svg"
+import homeIconFilled from "../assets/icons/home-filled.svg"
 import cartIcon from "../assets/icons/cart-res.svg"
+import cartFilled from "../assets/icons/cart-filled.svg"
 import chat from "../assets/icons/fi-rr-comment.svg"
+import chatFilled from "../assets/icons/chat-filled.svg"
 import trendingIcon from "../assets/icons/trending-res.svg"
+import trendingIconFilled from "../assets/icons/badge-filled.svg"
 import plusIcon from "../assets/icons/plus-hex-icon.svg"
 import plusGif from "../assets/icons/animated/plus.gif"
 
@@ -17,6 +21,11 @@ import CreateModalSpec from '../shared/createModalSpec/createModalSpec'
 const MainLayout = () => {
 
     const navigate = useNavigate()
+
+    const location = useLocation();
+    const route = location.pathname;
+    const routeArray = route.split('/');
+
     const [isMobile, setIsMobile] = useState<any>(false);
     const [visible, setVisible] = useState(false);
     useEffect(() => {
@@ -43,11 +52,11 @@ const MainLayout = () => {
                 <>
                     <div className='bottom-nav-bar'>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={homeIcon} width={21} height={21} alt="" />
+                            <img src={routeArray[1] == 'home' ? homeIconFilled : homeIcon} width={21} height={21} alt="" />
                             {/* <span>Home</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./cart')}>
-                            <img src={cartIcon} width={21} height={21} alt="" />
+                            <img src={routeArray[1] == 'cart' ? cartFilled : cartIcon} width={21} height={21} alt="" />
                             {/* <span>Cart</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => setVisible(true)}>
@@ -55,11 +64,11 @@ const MainLayout = () => {
                             <span></span>
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={trendingIcon} width={21} height={21} alt="" />
+                            <img src={routeArray[1] == 'trending' ? trendingIconFilled : trendingIcon} width={21} height={21} alt="" />
                             {/* <span>Verified</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./chat')}>
-                            <img src={chat} width={21} height={21} alt="" />
+                            <img src={routeArray[1] == 'chat' ? chatFilled : chat} width={21} height={21} alt="" />
                             {/* <span>Chat</span> */}
                         </div>
                     </div>
@@ -71,7 +80,7 @@ const MainLayout = () => {
 
             </Modal> */}
 
-            <CreateModalSpec visible={visible} setVisible={setVisible}/>
+            <CreateModalSpec visible={visible} setVisible={setVisible} />
         </>
     )
 }

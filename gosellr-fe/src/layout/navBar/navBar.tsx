@@ -152,16 +152,15 @@ const NavBar = () => {
 
     const navStylesCheckExcept = [
         {
-            route:"home"
+            route: "home"
         },
         {
-            route:"services"
+            route: "services"
         },
     ]
     const matchingRoute = navStylesCheckExcept.some(item => item.route === routeArray[1]);
-    const classToRender = `main-header-wrapper ${
-        matchingRoute ? "" : "main-header-fr-wh"
-    } d-flex justify-between align-center anim-low-to-high`;
+    const classToRender = `main-header-wrapper ${matchingRoute ? "" : "main-header-fr-wh"
+        } d-flex justify-between align-center anim-low-to-high`;
 
     return (
         <div
@@ -179,10 +178,17 @@ const NavBar = () => {
 
                     {!isMobile &&
                         <>
-                            <Button className="rounded-buttons-nav" onClick={() => navigate('./home')}><img src={homeIcon} width={20} height={20} alt="" /></Button>
-                            {/* <Button className="rounded-buttons-nav" onClick={() => navigate('./services')}><img src={services} width={20} height={20} alt="" /></Button> */}
-                            <Button className="rounded-buttons-nav" onClick={() => navigate('./chat')}><img src={chat} width={20} height={20} alt="" /><div className='sp-only-chat'>5</div></Button>
-                            <Button className="rounded-buttons-nav" onClick={() => navigate('./cart')}><img src={cart} width={20} height={20} alt="" /><div className='sp-only-chat'>2</div></Button>
+                            <Button className="rounded-buttons-nav" onClick={() => navigate('./home')}>
+                                <img src={homeIcon} width={20} height={20} alt="" />
+                            </Button>
+                            <Button className="rounded-buttons-nav" onClick={() => navigate('./chat')}>
+                                <img src={chat} width={20} height={20} alt="" />
+                                <div className='sp-only-chat'>5</div>
+                            </Button>
+                            <Button className="rounded-buttons-nav" onClick={() => navigate('./cart')}>
+                                <img src={cart} width={20} height={20} alt="" />
+                                <div className='sp-only-chat'>2</div>
+                            </Button>
                             <div className="user-profile-wrapper">
                                 <Dropdown menu={{ items }} placement="bottomRight" arrow overlayClassName='pro-drp'>
                                     <div className="user-profile">
@@ -191,8 +197,12 @@ const NavBar = () => {
                                 </Dropdown>
                             </div>
                         </>}
-                    {isMobile && <div className='advance-search-toggle-icon rounded-buttons-nav' onClick={() => setIsAdvanceSearch(true)}><img src={searchIcon} alt="" width={20} height={20} /></div>}
-                    {isMobile && <Button className="rounded-buttons-nav" onClick={() => setisDrawerOpen(true)}><img src={menu} width={20} height={20} alt="" /></Button>}
+                    {isMobile && <div className='advance-search-toggle-icon rounded-buttons-nav' onClick={() => setIsAdvanceSearch(true)}>
+                        <img src={searchIcon} alt="" width={20} height={20} />
+                        </div>}
+                    {isMobile && <Button className="rounded-buttons-nav" onClick={() => setisDrawerOpen(true)}>
+                        <img src={menu} width={20} height={20} alt="" />
+                        </Button>}
 
                     <Drawer
                         title={<div className="d-flex justify-between align-center"><span className='fs-15 fw-600'>Menu</span><span onClick={() => setisDrawerOpen(false)}><CloseOutlined /></span></div>}
