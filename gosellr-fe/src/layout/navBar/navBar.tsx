@@ -30,7 +30,7 @@ const NavBar = () => {
     const route = location.pathname;
     const routeArray = route.split('/');
 
-    console.log("routeArray", routeArray)
+    const [searchQuery, setsearchQuery] = useState()
 
     const [isAuthenticated, setIsAuthenticated] = useState(true)
     const [isDrawerOpen, setisDrawerOpen] = useState(false);
@@ -171,7 +171,7 @@ const NavBar = () => {
         >
             <div className="brand-logo"><img src={brandLogoW} alt="" /></div>
             {!isMobile && <div className="advance-search">
-                <Input type='search' className='input-adv-search' placeholder='Search in Gosellr...' onClick={() => setIsAdvanceSearch(true)} suffix={<img src={searchIcon} alt="" width={20} height={20} />} />
+                <Input type='search' value={searchQuery} className='input-adv-search' placeholder='Search in Gosellr...' onClick={() => setIsAdvanceSearch(true)} suffix={<img src={searchIcon} alt="" width={20} height={20} />} />
             </div>}
 
             {isAuthenticated ?
@@ -220,7 +220,7 @@ const NavBar = () => {
                 </div>
             }
 
-            <AdvanceSearch isAdvanceSearch={isAdvanceSearch} setIsAdvanceSearch={setIsAdvanceSearch} />
+            <AdvanceSearch isAdvanceSearch={isAdvanceSearch} setIsAdvanceSearch={setIsAdvanceSearch} setGetSearchQuery={setsearchQuery} />
 
         </div>
     )

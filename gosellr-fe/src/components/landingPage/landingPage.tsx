@@ -82,7 +82,7 @@ const LandingPage = () => {
           !isMobile &&
           <Button className='d-btn affilate-btn'><img src={users} width={12} height={12} alt="" />Affilate Program</Button>
         }
-        {isHamburderActive && <Cascader isHamburderActive={isHamburderActive} />}
+        {isHamburderActive && <Cascader isHamburderActive={isHamburderActive} setIsHamburderActive={setIsHamburderActive} />}
       </div>
 
 

@@ -1,5 +1,5 @@
-import { Col, Input, Modal, Row } from "antd";
-import React, { useState } from "react";
+import { Button, Col, Input, Modal, Row } from "antd";
+import React, { useEffect, useState } from "react";
 import "./advanceSearch.scss"
 import searchIcon from "../../assets/icons/fi-rs-search.svg";
 import { searchKeywordsData } from "../../mock/overallServices";
@@ -9,11 +9,15 @@ import trendingIcon from "../../assets/icons/fire.svg"
 
 import handCraft from "../../assets/inHouse/handcrafts.png"
 import marketPlace from "../../assets/inHouse/marketplace.png"
+import arrowBack from "../../assets/icons/angle-left.svg"
 
-const AdvanceSearch = ({ isAdvanceSearch, setIsAdvanceSearch }: any) => {
+
+const AdvanceSearch = ({ isAdvanceSearch, setIsAdvanceSearch , setGetSearchQuery }: any) => {
 
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredData, setFilteredData] = useState<string[]>([]);
+
+    const [isMobile, setIsMobile] = useState(false);
 
 
     const search = (query: any) => {
@@ -22,6 +26,18 @@ const AdvanceSearch = ({ isAdvanceSearch, setIsAdvanceSearch }: any) => {
         );
         setFilteredData(filtered);
     };
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        function handleViewportChange(event: any) {
+          setIsMobile(event.matches);
+        }
+        handleViewportChange(mediaQuery);
+        mediaQuery.addListener(handleViewportChange);
+        return () => {
+          mediaQuery.removeListener(handleViewportChange);
+        };
+      }, []);
 
 
     return (
@@ -36,6 +52,8 @@ const AdvanceSearch = ({ isAdvanceSearch, setIsAdvanceSearch }: any) => {
                 footer={false}
                 closable={false}
             >
+                <div className="fr-res-inp-wrapper">
+                {isMobile && <Button onClick={() => setIsAdvanceSearch(false)} className="back-btnsp-search"><img src={arrowBack} width={16} height={16} alt="" /></Button>}
                 <Input
                     type="search"
                     className="input-adv-search-modal-func"
@@ -45,8 +63,11 @@ const AdvanceSearch = ({ isAdvanceSearch, setIsAdvanceSearch }: any) => {
                     onChange={(e) => {
                         setSearchQuery(e.target.value);
                         search(e.target.value);
+                        setGetSearchQuery(e.target.value)
                     }}
                 />
+                </div>
+                
 
                 {searchQuery.length > 0 &&
                     <div className="search-results">
