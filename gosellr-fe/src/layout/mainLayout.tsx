@@ -52,11 +52,13 @@ const MainLayout = () => {
                 <>
                     <div className='bottom-nav-bar'>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={routeArray[1] == 'home' ? homeIconFilled : homeIcon} width={21} height={21} alt="" />
+                            <img className='un-hov' src={routeArray[1] == 'home' ? homeIconFilled : homeIcon} width={21} height={21} alt="" />
+                            <img className='hov-nav-img' src={homeIconFilled} width={21} height={21} alt="" />
                             {/* <span>Home</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./cart')}>
-                            <img src={routeArray[1] == 'cart' ? cartFilled : cartIcon} width={21} height={21} alt="" />
+                            <img className='un-hov' src={routeArray[1] == 'cart' ? cartFilled : cartIcon} width={21} height={21} alt="" />
+                            <img className='hov-nav-img' src={cartFilled} width={21} height={21} alt="" />
                             {/* <span>Cart</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => setVisible(true)}>
@@ -64,11 +66,13 @@ const MainLayout = () => {
                             <span></span>
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./home')}>
-                            <img src={routeArray[1] == 'trending' ? trendingIconFilled : trendingIcon} width={21} height={21} alt="" />
+                            <img className='un-hov' src={routeArray[1] == 'trending' ? trendingIconFilled : trendingIcon} width={21} height={21} alt="" />
+                            <img className='hov-nav-img' src={trendingIconFilled} width={21} height={21} alt="" />
                             {/* <span>Verified</span> */}
                         </div>
                         <div className="nav-icons-box" onClick={() => navigate('./chat')}>
-                            <img src={routeArray[1] == 'chat' ? chatFilled : chat} width={21} height={21} alt="" />
+                            <img className='un-hov' src={routeArray[1] == 'chat' ? chatFilled : chat} width={21} height={21} alt="" />
+                            <img className='hov-nav-img' src={chatFilled} width={21} height={21} alt="" />
                             {/* <span>Chat</span> */}
                         </div>
                     </div>

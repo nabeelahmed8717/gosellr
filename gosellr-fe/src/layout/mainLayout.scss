@@ -20,6 +20,20 @@
       font-weight: 400;
       font-size: 11px;
     }
+    .hov-nav-img{
+      display: none;
+    }
+    .un-hov{
+      display: block;
+    }
+    &:hover{
+      .hov-nav-img{
+        display: block;
+      }
+      .un-hov{
+        display: none;
+      }
+    }
   }
 }
 .main-floating-button{
