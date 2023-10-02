@@ -1,0 +1,104 @@
+.grouped-product-card-main {
+    // width: 250px;
+    // height: 300px;
+    // background-color: aliceblue;
+    // border-radius: 15px;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #f9f9f980;
+
+    &:hover {
+        background-color: #ffffff80;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 178px;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            height: -webkit-fill-available;
+        }
+    }
+
+    .roll-cage {
+        padding: 10px;
+
+        .product-title-and-discription {
+            height: 46px;
+
+            h3 {
+                color: #474747;
+                font-size: 15px;
+                font-weight: 500;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .product-rating {
+            .ant-rate-star {
+                font-size: 14px;
+                color: #fab529;
+            }
+        }
+
+        .badges-dept {
+            margin-top: 5px;
+            margin-top: 5px;
+            display: flex;
+            gap: 7px;
+            height: 21px;
+
+            .badge {
+                width: fit-content;
+                padding: 2px 7px;
+                font-size: 12px;
+                font-weight: 500;
+                border-radius: 4px;
+            }
+
+            .badge-edr {
+                background-color: #8e44ad24;
+                color: #8e44ad;
+            }
+
+            .badge-pss {
+                background-color: #3498db42;
+                color: #3498db;
+            }
+
+            .badge-jps {
+                background-color: #27ae6045;
+                color: #27ae60;
+            }
+        }
+
+        .product-price {
+            margin-top: 10px;
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                color: #e67e22;
+            }
+        }
+
+        .users-selling {
+            margin-top: 10px;
+        }
+    }
+
+}

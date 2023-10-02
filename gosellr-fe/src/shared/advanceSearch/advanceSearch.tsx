@@ -57,7 +57,7 @@ const AdvanceSearch = ({ isAdvanceSearch, setIsAdvanceSearch , setGetSearchQuery
                 <Input
                     type="search"
                     className="input-adv-search-modal-func"
-                    placeholder="Search in Godellr..."
+                    placeholder="Search in Gosellr..."
                     suffix={<img src={searchIcon} alt="" width={20} height={20} />}
                     value={searchQuery}
                     onChange={(e) => {

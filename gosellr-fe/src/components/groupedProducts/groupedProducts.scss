@@ -1,0 +1,101 @@
+.grouped-products-wrapper-main {
+    width: 100%;
+    @media (max-width: 768px) {
+      background-color: #F9F9F9;
+    }
+
+    .head-info-adver {
+        width: 100%;
+        padding: 30px 0px;
+        height: fit-content;
+        background-color: #F9F9F9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: 768px) {
+            width: 90%;
+            margin: 0 auto;
+          }
+
+        h2 {
+            font-family: 'Paytone One', sans-serif;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        h3 {
+            
+            text-align: center;
+        }
+    }
+
+    .info-tags {
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        .learn-more {
+            background-color: #ffffff;
+            padding: 6px 10px;
+            border: 1px solid #e7e7e9;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 20px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    }
+
+    .grouped-products-render {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            width: 95%;
+          }
+    }
+
+}
+
+.search-grouped-products {
+    width: 40vw;
+    border-radius: 30px;
+    margin-top: 4px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @media (max-width: 768px) {
+        width: 90%;
+      }
+}
+
+@media (max-width: 1200px) {
+    .grouped-products-render {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .grouped-products-render {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grouped-products-render {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  @media (max-width: 400px) {
+    .grouped-products-render {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 7px !important;
+    }
+  }
+  

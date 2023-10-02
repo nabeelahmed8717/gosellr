@@ -11,6 +11,7 @@ import adverRight from "../../assets/raw/adverRight.png"
 
 
 import arrowDown from "../../assets/icons/arrow-down-small.svg"
+import groupedImg from "../../assets/wrapper/grouped.svg"
 import { useNavigate } from 'react-router-dom'
 import { lowerCategories } from '../../mock/lowerCategories'
 import ProductCard from '../../shared/productCard/productCard'
@@ -71,6 +72,16 @@ const LandingPage = () => {
 
   return (
     <div className='wrapper-main-landing-page'>
+      <div className="grouped-products">
+        <div className="grouped-inner">
+          <img src={groupedImg} height={40} alt="" />
+          <div className='head-grp'>
+            <h3>Simplify Your E-commerce Shopping with Grouped Products</h3>
+            <p>Choose best and verified products on one click</p>
+          </div>
+          <Button onClick={() => navigate('../grouped-products')}>View now</Button>
+        </div>
+      </div>
       <div className="category-open-bar-wrapper">
         <div className="section-one">
           <Button className='d-btn hamburger-btn fs-14' onClick={() => setIsHamburderActive(!isHamburderActive)}><img src={hamburger} width={15} height={15} alt="" />Shop By Category</Button>

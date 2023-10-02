@@ -27,6 +27,7 @@ const SignUp = Loadable(lazy(() => import("./pages/signUp")));
 const Chat = Loadable(lazy(() => import("./pages/chat")));
 const MyCart = Loadable(lazy(() => import("./pages/myCart")));
 const UserProfile = Loadable(lazy(() => import("./pages/userProfile")));
+const GroupedProducts = Loadable(lazy(() => import("./pages/groupedProducts")));
 
 
 export const routes: any = [
@@ -60,8 +61,12 @@ export const routes: any = [
         element: <UserProfile />,
       },
       {
-        path: "view-Product",
+        path: "view-product",
         element: <ViewProduct />,
+      },
+      {
+        path: "grouped-products",
+        element: <GroupedProducts />,
       },
     ],
   },

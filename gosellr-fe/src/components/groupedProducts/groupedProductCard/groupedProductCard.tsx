@@ -1,12 +1,12 @@
 import React from 'react'
-import "./productCard.scss"
+import "./groupedProductCard.scss"
 import { Rate } from 'antd'
-import { useNavigate } from 'react-router-dom'
+import { Avatar, Divider, Tooltip } from 'antd';
+import { AntDesignOutlined, UserOutlined } from '@ant-design/icons';
 
-const ProductCard = ({ className, productData }: any) => {
-    const navigate = useNavigate()
+const GroupedProductCard = ({productData}:any) => {
     return (
-        <div className='product-main-wrapper product-card-wrapper' onClick={() => navigate('../view-product')}>
+        <div className="grouped-product-card-main">
             <div className="product-image">
                 <img src={productData?.productImage} alt="" />
             </div>
@@ -29,10 +29,25 @@ const ProductCard = ({ className, productData }: any) => {
                     }
                     
                 </div>
-                <div className='product-price'><span>{productData?.productPrice}</span></div>
+                <div className="users-selling">
+                <Avatar.Group maxCount={2} maxStyle={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>
+                    <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=2" />
+                    <Avatar style={{ backgroundColor: '#f56a00' }}>K</Avatar>
+                    <Tooltip title="Ant User" placement="top">
+                        <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
+                    </Tooltip>
+                    <Avatar style={{ backgroundColor: '#1677ff' }} icon={<AntDesignOutlined />} />
+                </Avatar.Group>
             </div>
+
+                <div className='product-price'><span>{productData?.productPriceFrom}</span> - <span>{productData?.productPriceTo}</span></div>
+            </div>
+
+
+            
+            
         </div>
     )
 }
 
-export default ProductCard
+export default GroupedProductCard
