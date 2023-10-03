@@ -11,7 +11,8 @@ import adverRight from "../../assets/raw/adverRight.png"
 
 
 import arrowDown from "../../assets/icons/arrow-down-small.svg"
-import groupedImg from "../../assets/wrapper/grouped.svg"
+import groupedImg from "../../assets/wrapper/e-com-grp-dull.svg"
+import groupedImgRes from "../../assets/wrapper/e-com-grp-dull-res.svg"
 import { useNavigate } from 'react-router-dom'
 import { lowerCategories } from '../../mock/lowerCategories'
 import ProductCard from '../../shared/productCard/productCard'
@@ -73,8 +74,8 @@ const LandingPage = () => {
   return (
     <div className='wrapper-main-landing-page'>
       <div className="grouped-products">
+          <img src={isMobile ? groupedImgRes : groupedImg} alt="" />
         <div className="grouped-inner">
-          <img src={groupedImg} height={40} alt="" />
           <div className='head-grp'>
             <h3>Simplify Your E-commerce Shopping with Grouped Products</h3>
             <p>Choose best and verified products on one click</p>

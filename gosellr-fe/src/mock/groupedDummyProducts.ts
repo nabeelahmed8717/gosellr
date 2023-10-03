@@ -7,6 +7,7 @@ export const groupedDummyProducts = [
         verifications: ["PSS", "EDR"],
         productPriceFrom: "$10",
         productPriceTo: "$14",
+        sellers: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAlN5bl2UIns-BmE8rqnEcVvF3eco4EiUwTPlKKfscZTDiX446E8bzDcW2ukxZ4-SySI&usqp=CAU","https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAlN5bl2UIns-BmE8rqnEcVvF3eco4EiUwTPlKKfscZTDiX446E8bzDcW2ukxZ4-SySI&usqp=CAU"]
     },
     {
         productID: 2,
@@ -16,6 +17,7 @@ export const groupedDummyProducts = [
         verifications: ["PSS", "EDR"],
         productPriceFrom: "$10",
         productPriceTo: "$14",
+        sellers: ["https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745","https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAlN5bl2UIns-BmE8rqnEcVvF3eco4EiUwTPlKKfscZTDiX446E8bzDcW2ukxZ4-SySI&usqp=CAU"]
     },
     {
         productID: 3,
@@ -25,5 +27,6 @@ export const groupedDummyProducts = [
         verifications: ["PSS", "EDR"],
         productPriceFrom: "$10",
         productPriceTo: "$14",
+        sellers: ["https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAlN5bl2UIns-BmE8rqnEcVvF3eco4EiUwTPlKKfscZTDiX446E8bzDcW2ukxZ4-SySI&usqp=CAU"]
     },
 ];

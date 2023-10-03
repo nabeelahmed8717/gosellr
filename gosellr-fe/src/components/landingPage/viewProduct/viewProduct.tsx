@@ -203,7 +203,6 @@ const ViewProduct = () => {
                                             <div className="badges-dept">
                                                 <div className='badge badge-edr'><span>EDR</span></div>
                                                 <div className='badge badge-pss'><span>PSS</span></div>
-
                                             </div>
                                         </div>
                                     </div>
