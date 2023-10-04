@@ -7,15 +7,18 @@
   top: 0;
   z-index: 10;
   transition: 0.3s;
+
   @media (max-width: 768px) {
     padding: 0px 12px;
   }
+
   .brand-logo {
     img {
       width: 100px;
       height: 50px;
     }
   }
+
   .advance-search {
     .input-adv-search {
       background-color: #F3F3F3;
@@ -24,23 +27,28 @@
       border-radius: 10px;
       padding: 0px 22px;
       border: none;
-      input{
+
+      input {
         background-color: #F3F3F3;
       }
     }
+
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: fit-content;
   }
-  .advance-search-toggle-icon{
-    img{
+
+  .advance-search-toggle-icon {
+    img {
       filter: invert(1) brightness(1.5);
     }
   }
+
   .nav-menu {
     gap: 0;
+
     .rounded-buttons-nav {
       border-radius: 50%;
       padding: 0px !important;
@@ -53,11 +61,13 @@
       border: none;
       transition: 0.3s;
       position: relative;
+
       img {
         filter: invert(1) brightness(1.5);
         transition: 0.3s;
       }
-      .sp-only-chat{
+
+      .sp-only-chat {
         position: absolute;
         top: 0;
         background-color: #FBB52A;
@@ -68,83 +78,97 @@
         right: 5px;
         top: 2px;
       }
+
       &:hover {
         background-color: #fff;
+
         img {
           filter: none;
         }
       }
     }
   }
-  
-  .user-profile-wrapper{
+
+  .user-profile-wrapper {
     .user-profile {
       margin-left: 20px;
+
       .user-img-wrapper {
         width: 45px;
         height: 45px;
         border-radius: 50%;
         background-color: #ffffff41;
         overflow: hidden;
+
         img {
           width: 45px;
           height: 45px;
         }
       }
     }
-    
+
   }
-  .login-btn{
+
+  .login-btn {
     background-color: #ffffff14;
     height: 43px;
     border-radius: 30px;
     font-weight: 600 !important;
     border: none !important;
     color: #fff;
-    &:hover{
+
+    &:hover {
       background-color: #fff;
       color: #000;
     }
   }
-  
+
 }
 
-.main-header-fr-wh{
+.main-header-fr-wh {
   background-color: #fff !important;
-  box-shadow: 0px 3px 7px 0px rgba(72, 72, 72, 0.08);
-  .nav-menu{
-    .rounded-buttons-nav{
+
+  // box-shadow: 0px 3px 7px 0px rgba(72, 72, 72, 0.08);
+  .nav-menu {
+    .rounded-buttons-nav {
       img {
         filter: none;
         transition: 0.3s;
         opacity: 0.6;
-    }
-    &:hover {
-      background-color: #dedede61;
-      img {
-        filter: none;
-        opacity: 1;
+      }
+
+      &:hover {
+        background-color: #dedede61;
+
+        img {
+          filter: none;
+          opacity: 1;
+        }
       }
     }
-    } 
-  } 
-  .user-img-wrapper{
+  }
+
+  .user-img-wrapper {
     border: 1px solid #e7e7e9;
   }
 }
 
-.pro-drp{
+.pro-drp {
   border-radius: 20px;
-  .ant-dropdown-menu{
-      background-color: #fdfdfd;
-      border-radius: 20px;
-      padding: 12px;
+
+  .ant-dropdown-menu {
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    padding: 12px;
   }
-  .ant-dropdown-menu-item , .ant-dropdown-menu-item-active{
+
+  .ant-dropdown-menu-item,
+  .ant-dropdown-menu-item-active {
     background-color: rgba(255, 0, 0, 0) !important;
-      padding: 0 !important;
+    padding: 0 !important;
   }
-  .drp-items-nav{
+
+  .drp-items-nav {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -152,17 +176,19 @@
     padding: 0px 35px;
     height: 40px;
     border-radius: 5px;
-    &:hover{
+
+    &:hover {
       background-color: #2c3e500f;
     }
-    img{
+
+    img {
       width: 20px;
       height: 20px;
     }
   }
 }
 
-.drp-items-nav{
+.drp-items-nav {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -170,20 +196,23 @@
   padding: 0px 35px;
   height: 40px;
   border-radius: 5px;
-  &:hover{
+
+  &:hover {
     background-color: #2c3e500f;
   }
-  img{
+
+  img {
     width: 20px;
     height: 20px;
   }
 }
 
-.user-profile-lower-widet-card{
+.user-profile-lower-widet-card {
   background-color: #F4F4F4;
   height: fit-content;
   border-radius: 20px;
   padding: 15px;
+
   .user-profile {
     .user-img-wrapper {
       width: 60px;
@@ -191,6 +220,7 @@
       border-radius: 50%;
       background-color: #ffffff41;
       overflow: hidden;
+
       img {
         width: 60px;
         height: 60px;
@@ -200,18 +230,31 @@
 }
 
 .anim-high-to-low {
-  animation: highMove 2s ; /* Set the animation-fill-mode to  */
+  animation: highMove 2s;
+  /* Set the animation-fill-mode to  */
 }
 
 @keyframes highMove {
-  from { margin-top: -66px !important; }
-  to { margin-top: 0px !important; }
+  from {
+    margin-top: -66px !important;
+  }
+
+  to {
+    margin-top: 0px !important;
+  }
 }
+
 .anim-low-to-high {
-  animation: lowMove 2s ; /* Set the animation-fill-mode to forwards */
+  animation: lowMove 2s;
+  /* Set the animation-fill-mode to forwards */
 }
 
 @keyframes lowMove {
-  from { margin-top: 0px !important; }
-  to { margin-top: -66px !important; }
+  from {
+    margin-top: 0px !important;
+  }
+
+  to {
+    margin-top: -66px !important;
+  }
 }

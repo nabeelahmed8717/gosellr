@@ -1,7 +1,7 @@
 export const dummyProducts = [
     {
         productID: 1,
-        productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgz-HX3jewf04u-DBlYZo1G5mxB5cgYe5fdg&usqp=CAU',
+        productImage: 'https://goodmockups.com/wp-content/uploads/2023/05/5-Free-Over-The-Ear-Wireless-Headphones-Mockup-PSD-Files-3.jpg',
         productLabel: "Wireless Bluetooth Headphones black ",
         productRatings: 5,
         verifications: ["PSS", "EDR"],
@@ -9,7 +9,7 @@ export const dummyProducts = [
     },
     {
         productID: 2,
-        productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShszFdCpul3-m6-wAOme7Q_3vo422VPYNY3g&usqp=CAU',
+        productImage: 'https://www.mockupworld.co/wp-content/uploads/2020/04/free-iphone-on-tripod-mockup-psd.jpg',
         productLabel: "Smartphone Tripod with Remote best quality",
         productRatings: 4,
         verifications: ["PSS"],
@@ -17,7 +17,7 @@ export const dummyProducts = [
     },
     {
         productID: 4,
-        productImage: 'https://block11organics.com.au/cdn/shop/products/Block11products_0057_eggs_350x350_88bd62b3-f121-4d1e-be4b-b90bbe3b5453_500x.jpg?v=1617093363',
+        productImage: 'https://s.tmimgcdn.com/scr/800x500/220300/egg-carton-mockup_220300-original.jpg',
         productLabel: "Free-Range Eggs (1 dozen)",
         productRatings: 4,
         verifications: ["EDR"],
@@ -25,7 +25,7 @@ export const dummyProducts = [
     },
     {
         productID: 3,
-        productImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHgLvSmWSnHYUgo2XC4Lkn0XU12PSzORGqA&usqp=CAU',
+        productImage: 'https://mockupriver.com/wp-content/uploads/2021/06/Free-Modern-Branding-Power-Bank-Mockup-1.jpg',
         productLabel: "Portable Power Bank 10000mAh (Fast charging)",
         productRatings: 2,
         verifications: ["EDR"],
@@ -33,7 +33,7 @@ export const dummyProducts = [
     },
     {
         productID: 5,
-        productImage: 'https://www.iheartpublix.com/wp-content/uploads/2022/02/Stonyfield-Tub-scaled-1600x1200.jpg',
+        productImage: 'https://free-psd-templates.com/wp-content/uploads/2021/06/7_PV_SM_Packaging_Mockup_01.jpg',
         productLabel: "Organic Greek Yogurt (32 oz) good for health ",
         productRatings: 4,
         verifications: ["PSS", "EDR"],
@@ -41,7 +41,7 @@ export const dummyProducts = [
     },
     {
         productID: 4,
-        productImage: 'https://www.businessinsider.in/photo/85834062/best-waterproof-laptop-bags-in-india.jpg?imgsize=29292',
+        productImage: 'https://m.media-amazon.com/images/I/61FRCHyMQ-L._AC_UY1000_.jpg',
         productLabel: "Waterproof Laptop Backpack ",
         productRatings: 3,
         verifications: [],
@@ -49,7 +49,7 @@ export const dummyProducts = [
     },
     {
         productID: 5,
-        productImage: 'https://www.hollywoodreporter.com/wp-content/uploads/2021/06/c2aea66cd646-SATECHI-Trio-Charger-ENV-REV2-95749c_1280x.jpeg',
+        productImage: 'https://i.ytimg.com/vi/OocBKrBNA0c/maxresdefault.jpg',
         productLabel: "Wireless Charging Pad",
         productRatings: 3,
         verifications: ["EDR"],
@@ -62,6 +62,14 @@ export const dummyProducts = [
         productRatings: 4,
         verifications: ["EDR", "PSS"],
         productPrice: "$3.49"
+    },
+    {
+        productID: 7,
+        productImage: 'https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMy0wMS80ODMtbWstOTA1NS1tb2NrdXAuanBn.jpg?s=3t3CgYgKDH3KFVdnHBnuJzK9OeKtmsY8rTH4f9Govd8',
+        productLabel: "Air buds (bluetooth 0.5) best quality premium sound",
+        productRatings: 4,
+        verifications: ["EDR", "PSS"],
+        productPrice: "$56.49"
     },
     
 ];

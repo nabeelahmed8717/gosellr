@@ -8,7 +8,7 @@ const ProductCard = ({ className, productData }: any) => {
     return (
         <div className='product-main-wrapper product-card-wrapper' onClick={() => navigate('../view-product')}>
             <div className="product-image">
-                <img src={productData?.productImage} alt="" />
+                <img src={productData?.productImage} loading='lazy' alt="" />
             </div>
             <div className="roll-cage">
                 <div className="product-title-and-discription">
