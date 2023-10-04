@@ -169,7 +169,7 @@ const LandingPage = () => {
 
 
 
-        <div style={{ backgroundColor: "#F7F7F7", width: "100%", height: "200px", marginTop: "20vh" }}></div>
+        <div style={{ backgroundColor: "#F7F7F7", width: "100%", height: "60px", marginTop: "20vh" }}></div>
       </div>
 
       <AdvanceSearch isAdvanceSearch={isAdvanceSearch} setIsAdvanceSearch={setIsAdvanceSearch} setGetSearchQuery={setsearchQuery} />
