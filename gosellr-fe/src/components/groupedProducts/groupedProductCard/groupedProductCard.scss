@@ -206,7 +206,8 @@
             max-height: 452px;
             overflow: scroll;
             padding: 14px;
-            @media (max-width: 768px){
+
+            @media (max-width: 768px) {
                 height: fit-content !important;
                 max-height: fit-content;
                 padding: 10px;
@@ -354,25 +355,54 @@
                                     border: none;
                                 }
 
-                                .exp-selling-at {
-                                    padding: 6px 19px;
-                                    font-size: 12px;
-                                    font-weight: 600;
-                                    line-height: 20px;
-                                    color: #818181;
-                                    width: fit-content;
-                                    height: fit-content;
-                                    border-radius: 5px;
-                                    border: 1px solid #8e44ad;
-                                    border-style: dashed;
 
-                                    span {
-                                        color: #8e44ad;
-                                        font-weight: 700;
-                                    }
-                                }
                             }
 
+                        }
+                    }
+                }
+
+                .exp-selling-at {
+                    padding: 6px 19px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    color: #818181;
+                    width: fit-content;
+                    height: fit-content;
+                    border-radius: 5px;
+                    border: 1px solid #8e44ad;
+                    border-style: dashed;
+
+                    span {
+                        color: #8e44ad;
+                        font-weight: 700;
+                    }
+                }
+
+                .process-seller {
+                    background-color: #ffffff;
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 10px;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+                    margin-top: 10px;
+                    .head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 10px;
+                        cursor: pointer;
+
+                        .inset-hd {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            h3 {
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
                         }
                     }
                 }
