@@ -43,31 +43,46 @@ const Cascader = ({ isHamburderActive, setIsHamburderActive }: any) => {
     return (
         <div className="cascader">
             <div className="main-categories" style={{ paddingRight: `${subcategoryActive ? "10px" : "0px"}` }}>
-                {isMobile && <div className='menu-head-flex' onClick={()=> setIsHamburderActive(false)}><img src={arrowBack} width={15} height={15} alt="" />
+                {isMobile && <div className='menu-head-flex' onClick={() => setIsHamburderActive(false)}><img src={arrowBack} width={15} height={15} alt="" />
                     Menu
                 </div>}
                 {
                     categories.map((item: any) => (
-                        <p onClick={() => (setSubcategoryActive(true), setSubToSubcategoryActiveData([]), setSubcategoryActiveData(item.subcategories), setactiveMenuHeadSub(item.name))}> <img src={item.icon} width={isMobile ? 20 : 14} alt="" /> {item.name}</p>
+                        <>
+                            {
+                                !isMobile ?
+                                    <p onMouseEnter={() => (setSubcategoryActive(true), setSubToSubcategoryActiveData([]), setSubToSubcategoryActive(false), setSubcategoryActiveData(item.subcategories), setactiveMenuHeadSub(item.name))}> <img src={item.icon} width={isMobile ? 20 : 14} alt="" /> <span>{item.name}</span></p>
+                                    :
+                                    <p style={{display:"flex", alignItems: "center", justifyContent:"space-between"}}>
+                                        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                                            <img src={item.icon} width={isMobile ? 20 : 14} alt="" />
+                                            <span>{item.name}</span>
+                                        </div>
+                                        <span style={{fontSize:"14px", fontWeight:"500", color:"#b1b1b1"}} onMouseEnter={() => (setSubcategoryActive(true), setSubToSubcategoryActiveData([]), setSubToSubcategoryActive(false), setSubcategoryActiveData(item.subcategories), setactiveMenuHeadSub(item.name))}>
+                                            more
+                                        </span>
+                                    </p>
+                            }
+                        </>
                     ))
                 }
             </div>
 
             {subcategoryActive &&
                 <div className="sub-categories" style={{ marginRight: "10px" }}>
-                    {isMobile && <div className='menu-head-flex'  onClick={() => (setSubcategoryActive(false))}><img src={arrowBack} width={15} height={15} alt=""/>
+                    {isMobile && <div className='menu-head-flex' onClick={() => (setSubcategoryActive(false))}><img src={arrowBack} width={15} height={15} alt="" />
                         {activeMenuHeadSub}
                     </div>}
                     {
                         subcategoryActiveData && subcategoryActiveData.map((item: any) => (
-                            <p onClick={() => (setSubToSubcategoryActive(true), setSubToSubcategoryActiveData(item.subcategories), setactiveMenuHeadSubToSub(item.name))}>{item.name}</p>
+                            <p onMouseEnter={() => (setSubToSubcategoryActive(true), setSubToSubcategoryActiveData(item.subcategories), setactiveMenuHeadSubToSub(item.name))}>{item.name}</p>
                         ))
                     }
                 </div>
             }
             {subToSubcategoryActive &&
                 <div className="sub-categories">
-                    {isMobile && <div className='menu-head-flex' onClick={() => (setSubcategoryActive(true), setSubToSubcategoryActive(false))}><img src={arrowBack} width={15} height={15} alt=""/>
+                    {isMobile && <div className='menu-head-flex' onClick={() => (setSubcategoryActive(true), setSubToSubcategoryActive(false))}><img src={arrowBack} width={15} height={15} alt="" />
                         {activeMenuHeadSubToSub}
                     </div>}
                     {
