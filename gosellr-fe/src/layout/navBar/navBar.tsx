@@ -19,6 +19,7 @@ import signOut from "../../assets/icons/fi-rs-sign-out.svg"
 
 import Switch from "../../assets/icons/fi-rr-refresh.svg"
 import searchIcon from "../../assets/icons/fi-rs-search.svg"
+import storeIcon from "../../assets/raw/store-icon.png"
 
 import { CloseOutlined } from '@ant-design/icons';
 import UserProfileCard from './userProfileCard/userProfileCard';
@@ -50,7 +51,20 @@ const NavBar = () => {
         {
             key: '1',
             label: (
-                <UserProfileCard />
+                <>
+                    <UserProfileCard />
+                    <a href="https://gosellr-selling-dashboard.vercel.app" target="_blank" rel="noopener noreferrer">
+                        <div className='store-red-alg'>
+                            <div className='store-img'>
+                                <img src={storeIcon} alt="" />
+                            </div>
+                            <div>
+                                <h3>Example Store</h3>
+                                <p style={{ fontSize: "12px", color: "#2980b9" }}>Click to navigate</p>
+                            </div>
+                        </div>
+                    </a>
+                </>
             ),
         },
         {
@@ -199,10 +213,10 @@ const NavBar = () => {
                         </>}
                     {isMobile && <div className='advance-search-toggle-icon rounded-buttons-nav' onClick={() => setIsAdvanceSearch(true)}>
                         <img src={searchIcon} alt="" width={20} height={20} />
-                        </div>}
+                    </div>}
                     {isMobile && <Button className="rounded-buttons-nav" onClick={() => setisDrawerOpen(true)}>
                         <img src={menu} width={20} height={20} alt="" />
-                        </Button>}
+                    </Button>}
 
                     <Drawer
                         title={<div className="d-flex justify-between align-center"><span className='fs-15 fw-600'>Menu</span><span onClick={() => setisDrawerOpen(false)}><CloseOutlined /></span></div>}
@@ -213,6 +227,12 @@ const NavBar = () => {
                         key="left"
                     >
                         <UserProfileCard isMobile={isMobile} />
+                        <div className='store-red-alg'>
+                            <div className='store-img'>
+                                <img src={storeIcon} alt="" />
+                            </div>
+                            <h3>Example Store</h3>
+                        </div>
                         {
                             respMenuItems.map((item: any) => (
                                 <div className="drp-items-nav" onClick={() => { item.link && navigate(`${item.link}`) }} style={{ marginTop: '10px' }} key={item.key}>

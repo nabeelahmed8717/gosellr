@@ -29,6 +29,8 @@ const MyCart = Loadable(lazy(() => import("./pages/myCart")));
 const UserProfile = Loadable(lazy(() => import("./pages/userProfile")));
 const GroupedProducts = Loadable(lazy(() => import("./pages/groupedProducts")));
 
+const CreateStore = Loadable(lazy(() => import("./pages/createStore")));
+
 
 export const routes: any = [
   { path: "/", element: <Navigate to="home" /> },
@@ -67,6 +69,10 @@ export const routes: any = [
       {
         path: "grouped-products",
         element: <GroupedProducts />,
+      },
+      {
+        path: "create-store",
+        element: <CreateStore />,
       },
     ],
   },

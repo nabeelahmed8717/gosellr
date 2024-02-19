@@ -48,7 +48,7 @@ const CreateModalSpec = ({ visible, setVisible }: any) => {
           <img src={createAnimated} height={250} alt="" />
           </div>
           <div className="boxes-create-main">
-            <div className="boxes-create-main-bx" onClick={() => {navigate(`./create/${'create-a-job-post'}`, {state:'create-a-job-post'}); handleClose()}}>
+            <div className="boxes-create-main-bx" onClick={() => {navigate(`./create-store`, {state:'create-a-job-post'}); handleClose()}}>
               <div className="icon">
                 <img src={jobIcon} width={15} height={15} alt="" />
               </div>

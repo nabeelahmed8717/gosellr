@@ -1,14 +1,14 @@
 .cascader {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #ffffffed;
     display: flex;
-    top: 70px;
+    top: 55px;
+    width: 100%;
+    left: 0;
+    padding: 20px 51px;
     z-index: 16;
     height: 379px;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 10px;
 
     .menu-head-flex{
         display: flex;
@@ -59,7 +59,6 @@
     .sub-categories {
         width: 180px;
         padding: 10px 10px;
-        background-color: #f6f6f6;
         border-radius: 10px;
         font-size: 15px;
         p {

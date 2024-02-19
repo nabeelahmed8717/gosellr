@@ -1,0 +1,55 @@
+.create-store-main {
+  .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .create-store-from {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 5vh;
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+  }
+}
+
+.create-store-form-wrapper {
+  .submit-btn {
+    background-color: #fab529;
+    color: #fff;
+  }
+  .ant-form-item
+    .ant-form-item-label
+    > label.ant-form-item-required:not(
+      .ant-form-item-required-mark-optional
+    )::before {
+    display: none;
+  }
+  .ant-form-item .ant-form-item-label {
+    padding-bottom: 2px !important;
+    font-weight: 600;
+  }
+  .end-navigator {
+    color: #727272;
+    width: auto;
+
+    span {
+      color: #000;
+      font-weight: 600;
+      &:hover {
+        color: #2a56b8;
+      }
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 10px !important;
+  }
+}

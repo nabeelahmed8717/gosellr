@@ -514,3 +514,18 @@ a {
     background: #656565;
   }
 }
+
+.menu-opener-hover-able{
+  .menu-main{
+    display: none;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  &:hover{
+    .menu-main{
+      margin-top: -20px;
+      display: block;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}

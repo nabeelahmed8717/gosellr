@@ -1,7 +1,8 @@
 import React from 'react'
 import "./productCard.scss"
-import { Rate } from 'antd'
+import { Button, Rate } from 'antd'
 import { useNavigate } from 'react-router-dom'
+import plusIcon from "../../assets/icons/plus-small.svg"
 
 const ProductCard = ({ className, productData }: any) => {
     const navigate = useNavigate()
@@ -9,8 +10,10 @@ const ProductCard = ({ className, productData }: any) => {
         <div className='product-main-wrapper product-card-wrapper' onClick={() => navigate('../view-product')}>
             <div className="product-image">
                 <img src={productData?.productImage} loading='lazy' alt="" />
+                <Button className='add'> <img src={plusIcon} width={20} height={20} alt="" /> Add</Button>
             </div>
             <div className="roll-cage">
+                <div className='product-price'><span>{productData?.productPrice}</span></div>
                 <div className="product-title-and-discription">
                     <h3>{productData?.productLabel}</h3>
                 </div>
@@ -29,7 +32,6 @@ const ProductCard = ({ className, productData }: any) => {
                     }
                     
                 </div>
-                <div className='product-price'><span>{productData?.productPrice}</span></div>
             </div>
         </div>
     )

@@ -9,6 +9,8 @@ import adverTwo from "../../assets/raw/adverTwo.png"
 import adverRight from "../../assets/raw/adverRight.png"
 import searchIcon from "../../assets/icons/fi-rs-search.svg"
 
+import brandLogoW from "../../assets/brandAssets/brand-logo-fr-white.svg"
+
 
 import arrowDown from "../../assets/icons/arrow-down-small.svg"
 import groupedImg from "../../assets/wrapper/e-com-grp-dull.svg"
@@ -80,21 +82,29 @@ const LandingPage = () => {
 
       <div className='wrapper-main-landing-page'>
         <div className="grouped-products">
-          <img src={isMobile ? groupedImgRes : groupedImg} alt="" />
-        <div className="grouped-inner">
-          <div className='head-grp'>
-            <h3>Simplify Your E-commerce Shopping with Grouped Products</h3>
-            <p>Choose best and verified products on one click</p>
+          {/* <img src={isMobile ? groupedImgRes : groupedImg} alt="" /> */}
+          <div className="grouped-inner">
+            <div className='head-grp'>
+              <h3>Simplify Your E-commerce Shopping with Grouped Products</h3>
+              <p>Choose best and verified products on one click</p>
+            </div>
+            <Button onClick={() => navigate('../grouped-products')}>View now</Button>
           </div>
-          <Button onClick={() => navigate('../grouped-products')}>View now</Button>
         </div>
-      </div>
         {/* <div className="advance-search">
           <Input type='search' value={searchQuery} className='input-adv-search' placeholder='Search in Gosellr...' onClick={() => setIsAdvanceSearch(true)} suffix={<img src={searchIcon} alt="" width={20} height={20} />} />
         </div> */}
         <div className="category-open-bar-wrapper">
           <div className="section-one">
-            <Button className='d-btn hamburger-btn fs-14' onClick={() => setIsHamburderActive(!isHamburderActive)}><img src={hamburger} width={15} height={15} alt="" />Shop By Category</Button>
+
+            <div className='menu-opener-hover-able'>
+              <Button className='d-btn hamburger-btn fs-14' ><img src={hamburger} width={15} height={15} alt="" />Shop By Category</Button>
+              <div className='menu-main'>
+                <Cascader isHamburderActive={isHamburderActive} setIsHamburderActive={setIsHamburderActive} />
+              </div>
+            </div>
+
+
             <div className="outh-category">
               <p><img src={bolt} width={12} height={12} alt="" />Deals Today</p>
             </div>
@@ -103,7 +113,6 @@ const LandingPage = () => {
             !isMobile &&
             <Button className='d-btn affilate-btn'><img src={users} width={12} height={12} alt="" />Affilate Program</Button>
           }
-          {isHamburderActive && <Cascader isHamburderActive={isHamburderActive} setIsHamburderActive={setIsHamburderActive} />}
         </div>
 
 
@@ -169,7 +178,60 @@ const LandingPage = () => {
 
 
 
-        <div style={{ backgroundColor: "#F7F7F7", width: "100%", height: "60px", marginTop: "20vh" }}></div>
+        <div style={{ backgroundColor: "#F7F7F7", width: "100%", padding: "50px 80px", marginTop: "20vh" }}>
+
+          <Row>
+            <Col xs={24} sm={24} md={6} lg={9}>
+              <div>
+                <img src={brandLogoW} width={100} alt="" />
+                <div style={{ marginLeft: "10px", marginTop: "20px" }}>
+                  <p>Contact</p>
+                  <p>5534 Somewhere In. The World 22193-10212</p>
+                </div>
+
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={6} lg={5}>
+              <div>
+                <h3 style={{ fontWeight: "500", marginBottom:"20px" }}>Useful links</h3>
+                <div style={{textTransform:"capitalize", display:"flex", flexDirection:"column", gap:"5px"}}>
+                  <p className='fs-14'>about us</p>
+                  <p className='fs-14'>contact</p>
+                  <p className='fs-14'>help</p>
+                  <p className='fs-14'>career</p>
+                  <p className='fs-14'>policy</p>
+                  <p className='fs-14'>flash sale</p>
+                  <p className='fs-14'>site map</p>
+                  <p className='fs-14'>ehb products</p>
+                </div>
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={6} lg={5}>
+            <div>
+                <h3 style={{ fontWeight: "500", marginBottom:"20px" }}>Help Center</h3>
+                <div style={{textTransform:"capitalize", display:"flex", flexDirection:"column", gap:"5px"}}>
+                  <p className='fs-14'>payments</p>
+                  <p className='fs-14'>shipping</p>
+                  <p className='fs-14'>quick products</p>
+                  <p className='fs-14'>refund policy</p>
+                </div>
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={6} lg={5}>
+            <div>
+                <h3 style={{ fontWeight: "500", marginBottom:"20px" }}>Gosellr Business</h3>
+                <div style={{textTransform:"capitalize", display:"flex", flexDirection:"column", gap:"5px"}}>
+                  <p className='fs-14'>sel on gosellr</p>
+                  <p className='fs-14'>affiliate program </p>
+                  <p className='fs-14'>suppliers</p>
+                  <p className='fs-14'>product verification</p>
+                  <p className='fs-14'>companies</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+
+        </div>
       </div>
 
       <AdvanceSearch isAdvanceSearch={isAdvanceSearch} setIsAdvanceSearch={setIsAdvanceSearch} setGetSearchQuery={setsearchQuery} />
